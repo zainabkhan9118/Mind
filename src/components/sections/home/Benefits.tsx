@@ -50,6 +50,7 @@ const Benefits = () => {
                   <div className="rounded-4xl overflow-hidden flex items-center justify-center">
                     <video
                       src="/Brain.mp4"
+                      poster="/Brain.png"
                       className="w-[440px] h-[440px] md:w-[400px] md:h-[500px] object-cover"
                       autoPlay
                       loop
