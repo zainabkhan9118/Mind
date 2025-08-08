@@ -1,5 +1,8 @@
 
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import AutoRotatingCarousel  from './AutoRotatingCarousel';
+
+
 
 const Footer = () => {
   return (
@@ -63,14 +66,10 @@ const Footer = () => {
         </div>
       </div>
 
-            {/* CTA Section */}
-      <div className="bg-black py-20 px-4">
-        <div className="w-full max-w-7xl mx-auto flex justify-center items-center">
-          <img 
-            src="/CTA.svg" 
-            alt="Call to Action" 
-            className="w-full h-auto max-h-[320px] sm:max-h-[400px] md:max-h-[440px] object-contain rounded-xl"
-          />
+            {/* CTA Section - Auto Rotating Carousel */}
+      <div className=" w-full">
+        <div className="w-full">
+          <AutoRotatingCarousel />
         </div>
       </div>
 

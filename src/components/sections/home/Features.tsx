@@ -1,115 +1,153 @@
-import { motion } from 'framer-motion'
 
+import  { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const carouselData = [
+  {
+    subtitle: 'Features',
+    title: (
+      <>
+        Healing Music &<br className="hidden sm:block" /> Frequencies
+      </>
+    ),
+    description:
+      'Discover the power of therapeutic sounds that gently guide your mind toward deeper relaxation, emotional balance, and improved focus.',
+    list: [
+      'Binaural beats',
+      'Solfeggio tones',
+      'EMDR audio',
+      'Natural soundscapes',
+    ],
+    image: '/VR_Girl.svg',
+    alt: 'Healing Music',
+    button: 'Explore All Features',
+  },
+  {
+    subtitle: 'Features',
+    title: (
+      <>
+        AI-Powered<br className="hidden sm:block" /> Mind Coach
+      </>
+    ),
+    description:
+      'Get personalized daily support from your intelligent AI guide, designed to help you build better habits, stay grounded, and grow at your own pace.',
+    list: [
+      'Personalized suggestions',
+      'Daily check-ins & support',
+      'Coaching',
+      'Guided self-growth journeys',
+    ],
+    image: '/Feature2.svg',
+    alt: 'AI Mind Coach',
+    button: 'Explore All Features',
+  },
+  {
+    subtitle: 'Features',
+    title: (
+      <>
+        Supportive<br className="hidden sm:block" /> Wellness Community
+      </>
+    ),
+    description:
+      'Join a welcoming space where you can meditate, heal, and connect with like-minded individuals through shared experiences and live group sessions.',
+    list: [
+      'Create & join group sessions',
+      'Private spaces',
+      'Peer-to-peer support',
+    ],
+    image: '/Feature3.svg',
+    alt: 'Wellness Community',
+    button: 'Explore All Featuresy',
+  },
+  {
+    subtitle: 'Features',
+    title: (
+      <>
+        Immersive<br className="hidden sm:block" /> VR Experiences
+      </>
+    ),
+    description:
+      'Step into calming virtual worlds designed to reduce stress, enhance mindfulness, and promote emotional healing through immersive VR journeys.',
+    list: [
+      'Guided meditations',
+      'Therapeutic environments',
+      'Interactive exercises',
+      'Real-time feedback',
+    ],
+    image: '/Feature4.svg',
+    alt: 'VR Experiences',
+    button: 'Explore All Features',
+  },
+];
 
 const Features = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % carouselData.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const current = carouselData[index];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#F2F2F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
-
-          {/* Left Content */}
-          <motion.div
-            className="h-auto md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-          >
+          <AnimatePresence mode="wait">
             <motion.div
-              className="text-[14px] sm:text-[16px] font-semibold text-[#0D0A09] mb-1"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              key={index}
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ type: 'spring', stiffness: 60, damping: 18, duration: 0.7 }}
+              className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
             >
-              Features
-            </motion.div>
-
-            <motion.h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0D0A09] leading-[1.1] mb-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              Mind Sessions for<br className="hidden sm:block" />
-              <span className="sm:hidden"> </span>Inner Calm
-            </motion.h2>
-
-            <motion.p
-              className="text-base sm:text-lg text-gray-600 max-w-lg leading-snug"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              Get personalized daily support from your intelligent AI guide, designed to help you build better habits, stay grounded, and grow at your own pace.
-            </motion.p>
-            
-            <motion.div
-              className="space-y-2 mt-4 sm:mt-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, staggerChildren: 0.1 }}
-            >
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-600">Meditations</span>
+              {/* Left Content */}
+              <div className="h-auto md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col transition-all duration-700">
+                {current.subtitle && (
+                  <div className="text-[14px] sm:text-[16px] font-semibold text-[#0D0A09] mb-1">
+                    {current.subtitle}
+                  </div>
+                )}
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0D0A09] leading-[1.1] mb-2">
+                  {current.title}
+                </h2>
+                <p className="text-base sm:text-lg text-gray-600 max-w-lg leading-snug">
+                  {current.description}
+                </p>
+                <div className="space-y-2 mt-4 sm:mt-6">
+                  {current.list.map((item, i) => (
+                    <div className="flex items-center" key={i}>
+                      <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-600">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 mt-auto pt-8 sm:pt-12 lg:pt-16">
+                  <button className="bg-[#0D0A090D] border border-gray-300 text-[#0D0A09] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-gray-200 transition-colors duration-200">
+                    {current.button}
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-600">Hypnosis</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-600">Coaching</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-600">Breathwork</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span className="text-gray-600">Sleep stories</span>
+              {/* Right Content - Carousel Image */}
+              <div className="h-auto sm:h-[450px] md:h-[500px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center">
+                <img
+                  src={current.image}
+                  alt={current.alt}
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </motion.div>
-
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 mt-auto pt-8 sm:pt-12 lg:pt-16"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <button className="bg-[#0D0A090D] border border-gray-300 text-[#0D0A09] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-gray-200 transition-colors duration-200">
-                Explore All Features
-              </button>
-              
-            </motion.div>
-          </motion.div>
-
-          {/* Right Content - VR Person Image */}
-          <motion.div
-            className="h-auto sm:h-[450px] md:h-[500px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-          >
-            <img
-              src="/VR_Girl.svg"
-              alt="Person using VR headset"
-              className="w-full h-full object-cover object-center"
-            />
-          </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

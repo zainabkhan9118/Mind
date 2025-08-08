@@ -1,6 +1,12 @@
 import { Card,  CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { useNavigate } from 'react-router-dom';
 
 const MentalWellness = () => {
+  const navigate = useNavigate();
+  // Handler to navigate to About page
+  const handleCardClick = () => {
+    navigate('/about');
+  };
   return (
      <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,7 +23,10 @@ const MentalWellness = () => {
         {/* Card Section */}
         <div className="flex flex-col md:flex-row gap-6 overflow-x-auto md:overflow-x-visible pb-2 scrollbar-hide">
           {/* Card 1 - Unlock a New State of Mind */}
-          <Card className="group hover:shadow-lg w-full md:w-[48%] lg:w-[640px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 bg-[#0D0A090D] flex-shrink-0">
+          <Card
+            className="group hover:shadow-lg w-full md:w-[48%] lg:w-[640px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 bg-[#0D0A090D] flex-shrink-0 cursor-pointer"
+            onClick={handleCardClick}
+          >
             <div className="flex flex-col md:flex-row h-full">
               {/* Left Content */}
               <div className="flex flex-col justify-between p-6 md:p-8 order-2 md:order-1 md:w-1/2">
@@ -43,14 +52,17 @@ const MentalWellness = () => {
                 <img 
                   src="/Placeholder Image.svg" 
                   alt="Person in VR experience" 
-                  className="absolute inset-0 w-full h-full object-cover md:rounded-r-lg"
+                  className="absolute inset-0 w-full h-full object-cover md:rounded-r-lg transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
           </Card>
 
           {/* Card 2 - Redefining the Future of Mental Health */}
-          <Card className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#0D0A090D] flex-shrink-0">
+          <Card
+            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#0D0A090D] flex-shrink-0 cursor-pointer"
+            onClick={handleCardClick}
+          >
             <div className="flex-grow flex flex-col justify-between px-4 sm:px-6 pt-4 sm:pt-6">
               <CardHeader className="p-0">
                 <CardTitle className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">
@@ -70,17 +82,20 @@ const MentalWellness = () => {
               </CardFooter>
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
-            <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto">
-                <img 
-                src="/Placeholder Image2.svg" 
-                alt="Mental health visualization" 
-                className="w-full h-full object-cover md:rounded-b-lg"
-                />
-            </div>
+      <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
+        <img 
+        src="/Placeholder Image2.svg" 
+        alt="Mental health visualization" 
+        className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
           </Card>
 
           {/* Card 3 - Empower Every Mind to Reach Its Full Potential */}
-          <Card className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#0D0A090D] flex-shrink-0">
+          <Card
+            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#0D0A090D] flex-shrink-0 cursor-pointer"
+            onClick={handleCardClick}
+          >
             <div className="flex-grow flex flex-col justify-between px-4 sm:px-6 pt-4 sm:pt-6">
                 <CardHeader className="p-0">
                 <CardTitle className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">
@@ -100,13 +115,13 @@ const MentalWellness = () => {
                 </CardFooter>
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
-            <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto">
-                <img 
-                src="/Placeholder Image3.svg" 
-                alt="Mind empowerment visualization" 
-                className="w-full h-full object-cover md:rounded-b-lg"
-                />
-            </div>
+      <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
+        <img 
+        src="/Placeholder Image3.svg" 
+        alt="Mind empowerment visualization" 
+        className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
           </Card>
         </div>
       </div>

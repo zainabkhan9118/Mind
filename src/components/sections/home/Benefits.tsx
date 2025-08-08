@@ -47,11 +47,14 @@ const Benefits = () => {
                 
                 {/* Center Column with Brain Image */}
                 <div className="w-full lg:w-1/3 flex justify-center my-12 lg:my-0">
-                  <div className=" rounded-lg overflow-hidden">
-                    <img 
-                      src="/Mind.svg" 
-                      alt="Mind visualization" 
-                      className="w-[540px] h-[666px]"
+                  <div className="rounded-4xl overflow-hidden flex items-center justify-center">
+                    <video
+                      src="/Brain.mp4"
+                      className="w-[440px] h-[440px] md:w-[400px] md:h-[500px] object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
                     />
                   </div>
                 </div>

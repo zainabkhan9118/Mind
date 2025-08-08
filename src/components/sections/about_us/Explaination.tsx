@@ -43,13 +43,19 @@ const Explaination = () => {
 
       {/* Image */}
         <div className="w-full max-w-full flex justify-center">
-          <img
-            src="/AboutCard.svg"
-            alt="About Us"
-            className="w-full max-w-[95vw] sm:max-w-2xl md:max-w-4xl lg:max-w-[1280px] h-[180px] sm:h-[300px] md:h-[400px] lg:h-[520px] object-cover rounded-3xl"
-          />
+        <div
+          className="relative w-full max-w-[95vw] sm:max-w-2xl md:max-w-4xl lg:max-w-[1280px] h-[180px] sm:h-[300px] md:h-[400px] lg:h-[520px] bg-center bg-cover rounded-3xl flex items-center justify-center px-4"
+          style={{ backgroundImage: "url('/AboutCard.jpg')" }}
+        >
+          <p
+            className="text-center font-bold leading-[140%] tracking-[-0.01em] text-white text-base sm:text-lg md:text-xl lg:text-2xl"
+            style={{ fontFamily: "'Wix Madefor Text', sans-serif" }}
+          >
+            Mind wellness is the next frontier, and it's not just about<br /> treatment. It’s about daily
+            support, inner exploration, and<br /> becoming the best version of yourself. We're here to guide <br />you on that journey.
+          </p>
         </div>
-      
+      </div>      
     </div>
   )
 }
