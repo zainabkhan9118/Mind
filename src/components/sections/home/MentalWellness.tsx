@@ -53,6 +53,7 @@ const MentalWellness = () => {
                   src="/Placeholder Image.svg" 
                   alt="Person in VR experience" 
                   className="absolute inset-0 w-full h-full object-cover md:rounded-r-lg transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -83,11 +84,12 @@ const MentalWellness = () => {
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
       <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
-        <img 
-        src="/Placeholder Image2.svg" 
-        alt="Mental health visualization" 
-        className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
-        />
+  <img 
+  src="/Placeholder Image2.svg" 
+  alt="Mental health visualization" 
+  className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
+  loading="lazy"
+  />
       </div>
           </Card>
 
@@ -116,11 +118,12 @@ const MentalWellness = () => {
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
       <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
-        <img 
-        src="/Placeholder Image3.svg" 
-        alt="Mind empowerment visualization" 
-        className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
-        />
+  <img 
+  src="/Placeholder Image3.svg" 
+  alt="Mind empowerment visualization" 
+  className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
+  loading="lazy"
+  />
       </div>
           </Card>
         </div>

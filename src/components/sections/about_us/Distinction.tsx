@@ -38,6 +38,7 @@ const Distinction = () => {
               src="/Timeline.svg"
               alt="Person using VR headset"
               className="w-full h-full object-contain"
+              loading='lazy'
             />
           </div>
         </div>

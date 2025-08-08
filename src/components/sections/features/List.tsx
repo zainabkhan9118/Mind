@@ -31,6 +31,7 @@ const List = () => {
               src="/VR_Girl.svg"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
+              loading="lazy"
             />
           </motion.div>
 
@@ -190,6 +191,7 @@ const List = () => {
               src="/Feature2.svg"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-r-3xl"
+              loading="lazy"
             />
           </motion.div>
         </div>
@@ -207,6 +209,7 @@ const List = () => {
               src="/Feature3.svg"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
+              loading="lazy"
             />
           </motion.div>
 
@@ -335,6 +338,7 @@ const List = () => {
               src="/Feature4.svg"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-r-3xl"
+              loading="lazy"
             />
           </motion.div>
         </div>

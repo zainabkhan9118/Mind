@@ -140,6 +140,7 @@ const Features = () => {
                   src={current.image}
                   alt={current.alt}
                   className="w-full h-full object-cover object-center"
+                  loading="lazy"
                 />
               </div>
             </motion.div>

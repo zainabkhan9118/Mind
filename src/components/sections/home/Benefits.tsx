@@ -56,6 +56,7 @@ const Benefits = () => {
                       loop
                       muted
                       playsInline
+                      preload="none"
                     />
                   </div>
                 </div>

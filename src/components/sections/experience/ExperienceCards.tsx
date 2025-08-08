@@ -19,7 +19,7 @@ const ExperienceCards = () => {
           {/* Card 1 - Unlock a New State of Mind */}
           <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[1050px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
             <div className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
-              <img src="/E1.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" />
+              <img src="/E1.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
             </div>
             <CardContent className="p-6 bg-white flex-1 flex flex-col justify-start">
               {/* New Heading */}
@@ -41,7 +41,7 @@ const ExperienceCards = () => {
             {/* Card 2 - Redefining the Future of Mental Health */}
             <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[1050px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
               <div className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
-                <img src="/E2.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" />
+                <img src="/E2.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
               </div>
               <CardContent className="p-6 bg-white flex-1 flex flex-col justify-start">
               {/* New Heading */}

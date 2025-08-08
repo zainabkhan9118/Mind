@@ -55,6 +55,12 @@ const Explaination = () => {
             support, inner exploration, and<br /> becoming the best version of yourself. We're here to guide <br />you on that journey.
           </p>
         </div>
+          <img
+            src="/ExpImage.png"
+            alt="VR Experience"
+            className="w-full h-auto rounded-3xl shadow-lg"
+            loading="lazy"
+          />
       </div>      
     </div>
   )

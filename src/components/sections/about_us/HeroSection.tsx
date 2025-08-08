@@ -10,6 +10,7 @@ const HeroSection = () => {
           muted
           playsInline
           className="w-full h-72 sm:h-96 md:h-[28rem] object-cover rounded-xl sm:rounded-4xl lg:rounded-4xl"
+          preload="none"
         />
       </div>
 
