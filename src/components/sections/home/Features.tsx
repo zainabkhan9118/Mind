@@ -100,10 +100,10 @@ const Features = () => {
       opacity: 1, 
       x: 0,
       transition: {
-        type: 'spring',
+        type: "spring" as const,
         stiffness: 100,
         damping: 20,
-        when: "beforeChildren",
+        when: "beforeChildren" as const,
         staggerChildren: 0.1
       }
     },
@@ -111,7 +111,7 @@ const Features = () => {
       opacity: 0, 
       x: direction > 0 ? -50 : 50,
       transition: {
-        ease: 'easeInOut',
+        ease: "easeInOut" as const,
         duration: 0.4
       }
     }
@@ -123,7 +123,7 @@ const Features = () => {
       opacity: 1, 
       y: 0,
       transition: {
-        ease: "easeOut", // use a valid string value
+        ease: "easeOut" as const,
         duration: 0.6
       }
     }
