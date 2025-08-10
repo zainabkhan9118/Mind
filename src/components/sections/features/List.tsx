@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion'
-
 
 const List = () => {
   return (
@@ -21,26 +19,20 @@ const List = () => {
         {/*1st Card Section */}
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
-        <motion.div
+        <div
             className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[762px] overflow-hidden shadow-none border-none bg-transparent"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
           >
             <img
-              src="/VR_Girl.svg"
+              src="/Feature 1.jpg"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
               loading="lazy"
             />
-          </motion.div>
+          </div>
 
           {/* Left Content */}
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-auto lg:h-[640px] p-5 sm:p-6 lg:p-8 shadow-none border-none flex flex-col"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0A09] mb-2 sm:mb-4">
               Mind Sessions for<br className="hidden sm:block" />
@@ -110,18 +102,15 @@ const List = () => {
               </div>
             </div>
             
-          </motion.div>
+          </div>
         </div>
 
         {/* 2nd Card Section */}
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
           {/* Left Content */}
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-auto lg:h-[640px] p-5 sm:p-6 lg:p-8 shadow-none border-none flex flex-col"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0A09] mb-2 sm:mb-4">
               Healing Music &<br className="hidden sm:block" />
@@ -179,46 +168,37 @@ const List = () => {
               
             </div>
             
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[686px] overflow-hidden shadow-none border-none bg-transparent"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
           >
             <img
-              src="/Feature2.svg"
+              src="/Feature 2.png"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-r-3xl"
               loading="lazy"
             />
-          </motion.div>
+          </div>
         </div>
 
         {/*3rd Card Section */}
 
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-[260px] sm:h-[350px] md:h-[420px] lg:h-[658px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
           >
             <img
-              src="/Feature3.svg"
+              src="/Feature 3.jpg"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
               loading="lazy"
             />
-          </motion.div>
+          </div>
 
           {/* Left Content */}
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-auto p-5 sm:p-6 lg:p-8 shadow-none border-none flex flex-col max-w-full lg:max-w-[600px]"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0A09] mb-2 sm:mb-4">
               AI-Powered
@@ -266,7 +246,7 @@ const List = () => {
               </div>
             </div>
             
-          </motion.div>
+          </div>
         </div>
 
         
@@ -275,11 +255,8 @@ const List = () => {
 
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
           {/* Left Content */}
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-auto p-5 sm:p-6 lg:p-8 shadow-none border-none flex flex-col max-w-full lg:max-w-[600px]"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0A09] mb-2 sm:mb-4">
               Wellness Community<br className="hidden sm:block" />
@@ -326,21 +303,18 @@ const List = () => {
               </div>
             </div>
             
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="w-full lg:w-1/2 h-[260px] sm:h-[350px] md:h-[420px] lg:h-[610px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
           >
             <img
-              src="/Feature4.svg"
+              src="/Feature 4.png"
               alt="Person using VR headset"
               className="w-full h-full object-cover rounded-r-3xl"
               loading="lazy"
             />
-          </motion.div>
+          </div>
         </div>
 
       </div>

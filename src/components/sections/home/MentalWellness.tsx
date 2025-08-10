@@ -50,7 +50,7 @@ const MentalWellness = () => {
               {/* Right Image */}
               <div className="relative h-32 sm:h-48 md:h-full order-1 md:order-2 md:w-1/2 overflow-hidden">
                 <img 
-                  src="/Placeholder Image.svg" 
+                  src="/Placeholder Image.png" 
                   alt="Person in VR experience" 
                   className="absolute inset-0 w-full h-full object-cover md:rounded-r-lg transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -83,14 +83,14 @@ const MentalWellness = () => {
               </CardFooter>
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
-      <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
-  <img 
-  src="/Placeholder Image2.svg" 
-  alt="Mental health visualization" 
-  className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
-  loading="lazy"
-  />
-      </div>
+            <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
+            <img 
+            src="/Placeholder Image2.png" 
+            alt="Mental health visualization" 
+            className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+            />
+          </div>
           </Card>
 
           {/* Card 3 - Empower Every Mind to Reach Its Full Potential */}
@@ -117,14 +117,14 @@ const MentalWellness = () => {
                 </CardFooter>
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
-      <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
-  <img 
-  src="/Placeholder Image3.svg" 
-  alt="Mind empowerment visualization" 
-  className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
-  loading="lazy"
-  />
-      </div>
+            <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
+              <img 
+              src="/Placeholder Image3.png" 
+              alt="Mind empowerment visualization" 
+              className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+              />
+            </div>
           </Card>
         </div>
       </div>
