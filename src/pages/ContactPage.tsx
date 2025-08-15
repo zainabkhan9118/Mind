@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -42,7 +40,7 @@ const ContactPage = () => {
   const [form, setForm] = useState<FormState>(initialState);
   const [errors, setErrors] = useState<FormErrors>({});
   const [success, setSuccess] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
+  const [submitting] = useState(false);
 
   const validate = (): FormErrors => {
     const errs: FormErrors = {};
@@ -54,7 +52,6 @@ const ContactPage = () => {
     if (!form.agree) errs.agree = "You must agree to the processing of your data.";
     return errs;
   };
-  // Removed duplicate state declarations for success and submitting
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -72,18 +69,24 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const errs = validate();
     setErrors(errs);
     if (Object.keys(errs).length) return;
-    setSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setSuccess(true);
-      setSubmitting(false);
-      setForm(initialState);
-    }, 1200);
+
+    // Construct mailto link
+    const subject = encodeURIComponent(`Contact Form: ${form.topic || 'No Topic'}`);
+    const body = encodeURIComponent(
+      `First Name: ${form.firstName}\n` +
+      `Last Name: ${form.lastName}\n` +
+      `Email: ${form.email}\n` +
+      `Phone: ${form.phone}\n` +
+      `Topic: ${form.topic}\n` +
+      `Message: ${form.message}\n` +
+      `Agreed to data processing: ${form.agree ? 'Yes' : 'No'}`
+    );
+    window.location.href = `mailto:hello@mindplayer.com?subject=${subject}&body=${body}`;
   };
 
   return (
