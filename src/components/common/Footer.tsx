@@ -80,12 +80,12 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Features</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Experiences</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Contact Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Pricing</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Home</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">About Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Features</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Experiences</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Contact Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Pricing</a></li>
             </ul>
           </div>
 
@@ -93,10 +93,10 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Our Features</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">Mind Sessions for Inner Calm</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Holistic Mental Wellness</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">AI-Powered Mind Coach</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Supportive Wellness Community</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Mind Sessions for Inner Calm</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Holistic Mental Wellness</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">AI-Powered Mind Coach</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Supportive Wellness Community</a></li>
             </ul>
           </div>
 
@@ -104,9 +104,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">Deep VR Guided Meditation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Calm Your Heightened Anxiety</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Rest and Relax Together</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Deep VR Guided Meditation</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Calm Your Heightened Anxiety</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Rest and Relax Together</a></li>
             </ul>
           </div>
 
@@ -114,11 +114,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Why Choose Us</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">Calm Your Inner World</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Strengthen from the Inside Out</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Ease Into Restful Sleep</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Find Your Mental Reset</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Sharpen Your Mental Flow</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Calm Your Inner World</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Strengthen from the Inside Out</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Ease Into Restful Sleep</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Find Your Mental Reset</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Sharpen Your Mental Flow</a></li>
             </ul>
           </div>
 
@@ -126,11 +126,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Connect With Us</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">Facebook Page</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Instagram Gallery</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Twitter Updates</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">LinkedIn Profile</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">YouTube Channel</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Facebook Page</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Instagram Gallery</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Twitter Updates</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">LinkedIn Profile</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">YouTube Channel</a></li>
             </ul>
           </div>
         </div>
