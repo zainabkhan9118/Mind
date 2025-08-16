@@ -1,10 +1,14 @@
 
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 import AutoRotatingCarousel  from './AutoRotatingCarousel';
+import { Link } from 'react-router-dom';
 
 
 
 const Footer = () => {
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className="bg-black text-white">
       {/* Path to Deeper Calm Section */}
@@ -80,12 +84,30 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-black">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Features</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Experiences</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Contact Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Pricing</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                Home</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                About Us</Link></li>
+              <li><Link to="/features" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                Features</Link></li>
+              <li><Link to="/experiences" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                Experiences</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                Contact Us</Link></li>
+              <li><Link to="/pricing" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                Pricing</Link></li>
             </ul>
           </div>
 
@@ -93,10 +115,10 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Our Features</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-black">Mind Sessions for Inner Calm</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Holistic Mental Wellness</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">AI-Powered Mind Coach</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Supportive Wellness Community</a></li>
+              <li className="text-gray-400 hover:text-black">Mind Sessions for Inner Calm</li>
+              <li className="text-gray-400 hover:text-black">Holistic Mental Wellness</li>
+              <li className="text-gray-400 hover:text-black">AI-Powered Mind Coach</li>
+              <li className="text-gray-400 hover:text-black">Supportive Wellness Community</li>
             </ul>
           </div>
 
@@ -104,9 +126,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-black">Deep VR Guided Meditation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Calm Your Heightened Anxiety</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Rest and Relax Together</a></li>
+              <li className="text-gray-400 hover:text-black">Deep VR Guided Meditation</li>
+              <li className="text-gray-400 hover:text-black">Calm Your Heightened Anxiety</li>
+              <li className="text-gray-400 hover:text-black">Rest and Relax Together</li>
             </ul>
           </div>
 
@@ -114,11 +136,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Why Choose Us</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-black">Calm Your Inner World</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Strengthen from the Inside Out</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Ease Into Restful Sleep</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Find Your Mental Reset</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Sharpen Your Mental Flow</a></li>
+              <li className="text-gray-400 hover:text-black">Calm Your Inner World</li>
+              <li className="text-gray-400 hover:text-black">Strengthen from the Inside Out</li>
+              <li className="text-gray-400 hover:text-black">Ease Into Restful Sleep</li>
+              <li className="text-gray-400 hover:text-black">Find Your Mental Reset</li>
+              <li className="text-gray-400 hover:text-black">Sharpen Your Mental Flow</li>
             </ul>
           </div>
 
@@ -126,11 +148,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Connect With Us</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-black">Facebook Page</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Instagram Gallery</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Twitter Updates</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">LinkedIn Profile</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">YouTube Channel</a></li>
+              <li className="text-gray-400 hover:text-black">Facebook Page</li>
+              <li className="text-gray-400 hover:text-black">Instagram Gallery</li>
+              <li className="text-gray-400 hover:text-black">Twitter Updates</li>
+              <li className="text-gray-400 hover:text-black">LinkedIn Profile</li>
+              <li className="text-gray-400 hover:text-black">YouTube Channel</li>
             </ul>
           </div>
         </div>

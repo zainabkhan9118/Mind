@@ -5,6 +5,11 @@ const Header = () => {
   const location = useLocation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMobileMenuOpen(false); // Also close mobile menu if open
+  };
+
   const isActive = (path: string) => {
     if (path === '/' && location.pathname === '/') return true
     if (path !== '/' && location.pathname.startsWith(path)) return true
@@ -16,7 +21,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2" onClick={handleNavClick}>
             <span className="text-2xl font-bold text-gray-900">MindPlayer</span>
           </Link>
 
@@ -29,6 +34,7 @@ const Header = () => {
                   ? 'text-black font-bold' 
                   : 'text-gray-700 font-medium hover:text-gray-900'
               }`}
+              onClick={handleNavClick}
             >
               Home
             </Link>
@@ -39,6 +45,7 @@ const Header = () => {
                   ? 'text-black font-bold' 
                   : 'text-gray-700 font-medium hover:text-gray-900'
               }`}
+              onClick={handleNavClick}
             >
               About Us
             </Link>
@@ -49,6 +56,7 @@ const Header = () => {
                   ? 'text-black font-bold' 
                   : 'text-gray-700 font-medium hover:text-gray-900'
               }`}
+              onClick={handleNavClick}
             >
               Features
             </Link>
@@ -59,6 +67,7 @@ const Header = () => {
                   ? 'text-black font-bold' 
                   : 'text-gray-700 font-medium hover:text-gray-900'
               }`}
+              onClick={handleNavClick}
             >
               Experiences
             </Link>
@@ -69,6 +78,7 @@ const Header = () => {
                   ? 'text-black font-bold' 
                   : 'text-gray-700 font-medium hover:text-gray-900'
               }`}
+              onClick={handleNavClick}
             >
               Pricing
             </Link>
@@ -79,6 +89,7 @@ const Header = () => {
             <Link 
               to="/contact" 
               className="bg-[#DCD3F7] text-black px-4 py-2 rounded-4xl text-sm font-medium hover:bg-[#ccc0f2] transition-colors duration-200"
+              onClick={handleNavClick}
             >
               Contact Us
             </Link>
@@ -110,7 +121,11 @@ const Header = () => {
                     ? 'text-black font-bold bg-gray-50' 
                     : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
+
               >
                 Home
               </Link>
@@ -121,7 +136,10 @@ const Header = () => {
                     ? 'text-black font-bold bg-gray-50' 
                     : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
               >
                 About Us
               </Link>
@@ -132,7 +150,10 @@ const Header = () => {
                     ? 'text-black font-bold bg-gray-50' 
                     : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
               >
                 Features
               </Link>
@@ -143,7 +164,10 @@ const Header = () => {
                     ? 'text-black font-bold bg-gray-50' 
                     : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
               >
                 Experiences
               </Link>
@@ -154,14 +178,20 @@ const Header = () => {
                     ? 'text-black font-bold bg-gray-50' 
                     : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
               >
                 Pricing
               </Link>
               <Link 
                 to="/contact" 
                 className="block mx-3 mt-4 bg-[#DCD3F7] text-black px-4 py-2 rounded-md text-sm font-medium text-center hover:bg-[#ccc0f2] transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
               >
                 Contact Us
               </Link>
