@@ -176,7 +176,7 @@ const List = () => {
             <img
               src="/Feature 2.png"
               alt="Person using VR headset"
-              className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-r-3xl"
+              className="w-full h-full object-cover rounded-b-xl sm:rounded-b-3xl lg:rounded-bl-none lg:rounded-r-3xl"
               loading="lazy"
             />
           </div>
@@ -311,7 +311,7 @@ const List = () => {
             <img
               src="/Feature 4.png"
               alt="Person using VR headset"
-              className="w-full h-full object-cover rounded-r-3xl"
+              className="w-full h-full object-cover rounded-b-xl sm:rounded-b-3xl lg:rounded-bl-none lg:rounded-r-3xl"
               loading="lazy"
             />
           </div>

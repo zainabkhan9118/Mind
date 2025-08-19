@@ -5,8 +5,10 @@ const MentalWellness = () => {
   const navigate = useNavigate();
   // Handler to navigate to About page
   const handleCardClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     navigate('/about');
   };
+
   return (
      <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +50,7 @@ const MentalWellness = () => {
                 </div>
               </div>
               {/* Right Image */}
-              <div className="relative h-32 sm:h-48 md:h-full order-1 md:order-2 md:w-1/2 overflow-hidden">
+              <div className="relative h-44 sm:h-56 md:h-full order-1 md:order-2 md:w-1/2 overflow-hidden">
                 <img 
                   src="/Placeholder Image.png" 
                   alt="Person in VR experience" 
@@ -83,7 +85,7 @@ const MentalWellness = () => {
               </CardFooter>
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
-            <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
+            <div className="w-full h-32 sm:h-40 md:h-[171px] mt-auto overflow-hidden">
             <img 
             src="/Placeholder Image2.png" 
             alt="Mental health visualization" 
@@ -117,7 +119,7 @@ const MentalWellness = () => {
                 </CardFooter>
             </div>
             {/* Image at the bottom - 171px tall, 100% width, no spacing */}
-            <div className="w-full h-20 sm:h-[120px] md:h-[171px] mt-auto overflow-hidden">
+            <div className="w-full h-36 sm:h-44 md:h-[171px] mt-auto overflow-hidden">
               <img 
               src="/Placeholder Image3.png" 
               alt="Mind empowerment visualization" 

@@ -87,7 +87,7 @@ const Features = () => {
     const interval = setInterval(() => {
       setDirection(1);
       setIndex((prev) => (prev + 1) % carouselData.length);
-    }, 5000);
+    }, 8000); 
     return () => clearInterval(interval);
   }, []);
 
@@ -207,6 +207,24 @@ const Features = () => {
             </motion.div>
           </AnimatePresence>
         </div>
+      </div>
+      {/* Navigation Dots */}
+  <div className="flex justify-center items-center gap-3 mt-4 mb-10">
+        {carouselData.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => {
+              setDirection(i > index ? 1 : -1);
+              setIndex(i);
+            }}
+            className={`w-3 h-3 rounded-full transition-all duration-300 border-2 focus:outline-none ${
+              i === index
+                ? 'bg-[#0D0A09] border-[#0D0A09] scale-125'
+                : 'bg-gray-300 border-gray-300 opacity-60'
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );

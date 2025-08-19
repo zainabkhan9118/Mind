@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+  <div className="relative w-full h-72 sm:h-96 md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -9,7 +9,7 @@ const HeroSection = () => {
         playsInline
         poster="/hero.png"
         preload="metadata"
-        className="absolute inset-0 w-full h-full object-fill object-center z-0"
+        className="absolute inset-0 w-full h-72 sm:h-96 md:h-full object-cover object-center z-0"
         style={{ background: "transparent" }}
       >
         <source src="/Holographic Sphere.mp4" type="video/mp4" />

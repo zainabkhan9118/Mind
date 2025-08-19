@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+
 
 type FormState = {
   firstName: string;
@@ -106,10 +106,9 @@ const ContactPage = () => {
           noValidate
         >
           <div
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full"
-            style={{ width: 768, opacity: 1 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl"
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Label htmlFor="firstName" className="block text-sm font-medium text-[#222]">First name (required)</Label>
               <Input
                 id="firstName"
@@ -119,11 +118,11 @@ const ContactPage = () => {
                 autoComplete="given-name"
                 placeholder=""
                 aria-invalid={!!errors.firstName}
-                style={{ width: 372, height: 48, borderRadius: 12, background: '#0D0A090D', opacity: 1 }}
+                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
               />
               {errors.firstName && <p className="text-xs text-red-500">{errors.firstName}</p>}
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Label htmlFor="lastName" className="block text-sm font-medium text-[#222]">Last name (optional)</Label>
               <Input
                 id="lastName"
@@ -132,10 +131,10 @@ const ContactPage = () => {
                 onChange={handleChange}
                 autoComplete="family-name"
                 placeholder=""
-                style={{ width: 372, height: 48, borderRadius: 12, background: '#0D0A090D', opacity: 1 }}
+                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
               />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Label htmlFor="email" className="block text-sm font-medium text-[#222]">Email (required)</Label>
               <Input
                 id="email"
@@ -146,11 +145,11 @@ const ContactPage = () => {
                 autoComplete="email"
                 placeholder=""
                 aria-invalid={!!errors.email}
-                style={{ width: 372, height: 48, borderRadius: 12, background: '#0D0A090D', opacity: 1 }}
+                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
               />
               {errors.email && <p className="text-xs text-red-500">{errors.email}</p>}
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Label htmlFor="phone" className="block text-sm font-medium text-[#222]">Phone number (optional)</Label>
               <Input
                 id="phone"
@@ -160,19 +159,18 @@ const ContactPage = () => {
                 onChange={handleChange}
                 autoComplete="tel"
                 placeholder=""
-                style={{ width: 372, height: 48, borderRadius: 12, background: '#0D0A090D', opacity: 1 }}
+                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
               />
             </div>
           </div>
-          <div style={{ width: 768, margin: '0 auto' }} className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full max-w-2xl">
             <Label htmlFor="topic">Choose a topic (required)</Label>
             <select
               id="topic"
               name="topic"
               value={form.topic}
               onChange={handleChange}
-              className="mt-1 w-full border border-[#e5e5e5] px-3 py-2 text-base text-[#222] focus:border-[#DB91EF] focus:ring-2 focus:ring-[#DB91EF]/30 outline-none"
-              style={{ borderRadius: 12, background: '#0D0A090D', height: 48, opacity: 1 }}
+              className="mt-1 w-full border border-[#e5e5e5] px-3 py-2 text-base text-[#222] focus:border-[#DB91EF] focus:ring-2 focus:ring-[#DB91EF]/30 outline-none rounded-xl bg-[#0D0A090D] h-12"
               aria-invalid={!!errors.topic}
             >
               <option value="">Select one...</option>
@@ -182,9 +180,9 @@ const ContactPage = () => {
             </select>
             {errors.topic && <p className="text-xs text-red-500 mt-1">{errors.topic}</p>}
           </div>
-          <div style={{ width: 768, margin: '0 auto' }} className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full max-w-2xl">
             <Label htmlFor="attachment">Attachment (optional)</Label>
-            <div style={{ position: 'relative', width: '100%' }}>
+            <div className="relative w-full">
               <input
                 id="attachment"
                 name="attachment"
@@ -194,33 +192,19 @@ const ContactPage = () => {
               />
               <label
                 htmlFor="attachment"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  width: '100%',
-                  height: 96,
-                  background: '#0D0A090D',
-                  borderRadius: 12,
-                  padding: '18px 20px',
-                  cursor: 'pointer',
-                  border: 'none',
-                  fontWeight: 400,
-                  fontSize: 20,
-                  color: '#888',
-                  position: 'relative',
-                }}
+                className="flex items-center w-full h-24 bg-[#0D0A090D] rounded-xl px-5 cursor-pointer border-none font-normal text-lg text-[#888] relative"
               >
-                <span style={{ flex: 1, textAlign: 'left', color: '#888' }}>
+                <span className="flex-1 text-left text-[#888]">
                   {form.attachment ? form.attachment.name : 'Upload your file here...'}
                 </span>
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', right: 24, top: '50%', transform: 'translateY(-50%)' }}>
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute right-6 top-1/2 -translate-y-1/2">
                   <rect x="4" y="4" width="16" height="16" rx="2" fill="#bdbdbd"/>
                   <path d="M12 8v6m0 0l-2-2m2 2l2-2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </label>
             </div>
           </div>
-          <div style={{ width: 768, margin: '0 auto' }} className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full max-w-2xl">
             <Label htmlFor="message">Message (required)</Label>
             <Textarea
               id="message"
@@ -230,12 +214,12 @@ const ContactPage = () => {
               rows={5}
               placeholder="Type your message..."
               aria-invalid={!!errors.message}
-              className="mt-1"
-              style={{ width: 768, height: 180, borderRadius: 12, background: '#0D0A090D', opacity: 1, padding: 12 }}
+              className="mt-1 w-full rounded-xl bg-[#0D0A090D] p-3"
+              style={{ minHeight: 120 }}
             />
             {errors.message && <p className="text-xs text-red-500 mt-1">{errors.message}</p>}
           </div>
-          <div className="flex items-center gap-2" style={{ width: 768, margin: '0 auto' }}>
+          <div className="flex items-center gap-2 w-full max-w-2xl">
             <input
               id="agree"
               name="agree"
@@ -246,15 +230,15 @@ const ContactPage = () => {
             />
             <Label htmlFor="agree" className="text-xs text-[#222] opacity-80">I agree to the processing of my data for the purpose of this request.</Label>
           </div>
-          {errors.agree && <p className="text-xs text-red-500 mt-1">{errors.agree}</p>}
-          <div className="flex justify-center pt-2" style={{ width: 768, margin: '0 auto' }}>
-            <Button
+          {errors.agree && <p className="text-xs text-red-500 mt-1 w-full max-w-2xl">{errors.agree}</p>}
+          <div className="flex justify-center pt-2 w-full max-w-2xl">
+            <button
               type="submit"
-              className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 rounded-full font-semibold text-base shadow-md transition-colors duration-200"
+              className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 rounded-full font-semibold text-base shadow-md transition-colors duration-200 w-full sm:w-auto"
               disabled={submitting}
             >
               {submitting ? "Sending..." : "Send Message"}
-            </Button>
+            </button>
           </div>
         </form>
       </div>
@@ -265,12 +249,12 @@ const ContactPage = () => {
           <div className="bg-white rounded-2xl shadow-xl px-8 py-10 max-w-md w-full text-center">
             <h2 className="text-xl font-bold mb-2 text-[#181028]">Thanks for Reaching Out!</h2>
             <p className="mb-6 text-[#222] opacity-90">Your query has been submitted. We’ll get back to you within 2 business days.</p>
-            <Button
+            <button
               className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 rounded-full font-semibold text-base shadow-md transition-colors duration-200"
               onClick={() => setSuccess(false)}
             >
               Go Back
-            </Button>
+            </button>
           </div>
         </div>
       )}

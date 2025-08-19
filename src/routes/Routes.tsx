@@ -6,6 +6,7 @@ import FeaturesPage from '@/pages/FeaturesPage'
 import ExperiencePage from '@/pages/ExperiencePage'
 import Pricing from '@/pages/Pricing'
 import ContactPage from '@/pages/ContactPage'
+import LearnMore from '@/pages/LearnMore'
 function Router() {
   return (
     <Layout>
@@ -16,6 +17,7 @@ function Router() {
         <Route path="/experiences" element={<ExperiencePage />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/learn-more" element={<LearnMore />} />
 
       </Routes>
     </Layout>

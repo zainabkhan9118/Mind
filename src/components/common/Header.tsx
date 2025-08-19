@@ -82,6 +82,17 @@ const Header = () => {
             >
               Pricing
             </Link>
+            <Link 
+              to="/contact" 
+              className={`text-sm transition-colors duration-200 ${
+                isActive('/contact') 
+                  ? 'text-black font-bold' 
+                  : 'text-gray-700 font-medium hover:text-gray-900'
+              }`}
+              onClick={handleNavClick}
+            >
+              Contact Us
+            </Link>
           </nav>
 
           {/* Contact Us Button */}
@@ -91,7 +102,7 @@ const Header = () => {
               className="bg-[#DCD3F7] text-black px-4 py-2 rounded-4xl text-sm font-medium hover:bg-[#ccc0f2] transition-colors duration-200"
               onClick={handleNavClick}
             >
-              Contact Us
+              Try For Free
             </Link>
           </div>
 
@@ -185,6 +196,22 @@ const Header = () => {
               >
                 Pricing
               </Link>
+
+                <Link 
+                to="/contact" 
+                className={`block px-3 py-2 text-sm transition-colors ${
+                  isActive('/contact') 
+                    ? 'text-black font-bold bg-gray-50' 
+                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                }`}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  handleNavClick();
+                }}
+              >
+                Contact Us
+              </Link>
+                
               <Link 
                 to="/contact" 
                 className="block mx-3 mt-4 bg-[#DCD3F7] text-black px-4 py-2 rounded-md text-sm font-medium text-center hover:bg-[#ccc0f2] transition-colors"
@@ -193,7 +220,7 @@ const Header = () => {
                   handleNavClick();
                 }}
               >
-                Contact Us
+                Try For Free
               </Link>
             </div>
           </nav>

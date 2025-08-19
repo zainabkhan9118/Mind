@@ -1,11 +1,16 @@
-// Auto-rotating carousel component
+
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const AutoRotatingCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const carouselRef = useRef<HTMLDivElement>(null);
   
+   const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // setIsMobileMenuOpen(false); // Also close mobile menu if open
+  };
   // Array of carousel items (images, content, etc.)
   const carouselItems = [
     {
@@ -89,18 +94,20 @@ const AutoRotatingCarousel = () => {
               <p className="text-lg sm:text-xl mb-8">{item.description}</p>
 
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-colors"
+                onClick={handleNavClick}
                 >
-                  Contact Us
-                </a>
-                <a
-                  href="#learn-more"
-                  className="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-colors"
+                  Try For Free
+                </Link>
+                <Link
+                  to="/learn-more"
+                  className="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-black hover:bg-opacity-10 transition-colors"
+                onClick={handleNavClick}
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
