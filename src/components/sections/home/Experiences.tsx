@@ -1,6 +1,14 @@
 import { Card} from '@/components/ui/card'
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 const Experiences = () => {
+  const navigate = useNavigate();
+
+   const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+   
+  };
+
   return (
     <div className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,8 +52,17 @@ const Experiences = () => {
             your mind to new states of calm and clarity.
           </p>
 
-          <div className="flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 mt-1">
-            <ArrowRight className="text-white" size={20} />
+          <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 mt-1 cursor-pointer transition-all">
+            <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
+            <button
+              className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              onClick={() => {
+                handleNavClick();
+                navigate('/learn-more');
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>
@@ -69,8 +86,15 @@ const Experiences = () => {
                       <p className="text-sm sm:text-base">
                         Blend your favorite sounds, visuals, and sessions to<br /> create fully personalized immersive experiences—<br />tailored to your mood and goals.
                       </p>
-                      <div className="flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 mt-1">
-                        <ArrowRight className="text-white" size={20} />
+                      <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 mt-1 cursor-pointer transition-all">
+                        <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
+                        <button
+                          className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                          onClick={() => navigate('/learn-more')}
+                          tabIndex={-1}
+                        >
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
