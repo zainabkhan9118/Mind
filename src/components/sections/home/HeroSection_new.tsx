@@ -23,12 +23,10 @@ const HeroSection = () => {
             className="text-xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4"
             style={{ textTransform: "uppercase" }}
           >
-            LONG HEADING IS WHAT YOU
-            <br /> SEE HERE IN THIS FEATURES.
+            YOUR MIND. LIMITLESS.
           </h1>
           <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-sm md:max-w-md mb-0">
-            Immerse yourself in stunning virtual
-            <br /> environments that promote relaxation and.
+            Discover the power of immersive mental wellness.
           </p>
         </div>
       </div>

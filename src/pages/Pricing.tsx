@@ -31,12 +31,12 @@ const Pricing = () => {
             <li>✓ Join community groups</li>
             <li>✓ Try AI Mind Coach (limited)</li>
           </ul>
-          <button className="mt-auto w-full rounded-full bg-[#e6d8fa] text-[#0D0A09] font-semibold py-3 text-base shadow-sm hover:bg-[#db91ef] transition">Contact Us</button>
+          <button className="mt-auto w-full rounded-full bg-[#e6d8fa] text-[#0D0A09] font-semibold py-3 text-base shadow-sm hover:bg-[#db91ef] transition">Try For Free</button>
         </div>
 
         {/* Premium Card */}
         <div
-          className="bg-[#F8F6FD] border border-[#ece7f6] rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col items-center w-full max-w-xs sm:max-w-md md:max-w-[420px] lg:max-w-[480px] h-auto md:h-[526px] shadow-md"
+          className="bg-[#fff7e6] border border-[#ffd580] rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col items-center w-full max-w-xs sm:max-w-md md:max-w-[420px] lg:max-w-[480px] h-auto md:h-[526px] shadow-md"
           style={{ opacity: 1 }}
         >
           <div className="w-full flex flex-col items-center mb-2 sm:mb-4 gap-4 sm:gap-[24px]">
@@ -52,7 +52,7 @@ const Pricing = () => {
             <li>✓ Full AI Mind Coach access</li>
             <li>✓ Early access to new features</li>
           </ul>
-          <button className="mt-auto w-full rounded-full bg-[#e6d8fa] text-[#0D0A09] font-semibold py-3 text-base shadow-sm hover:bg-[#db91ef] transition">Contact Us</button>
+          <button className="mt-auto w-full rounded-full bg-[#e6d8fa] text-[#0D0A09] font-semibold py-3 text-base shadow-sm hover:bg-[#db91ef] transition">Unlock Premium</button>
         </div>
       </div>
     </section>

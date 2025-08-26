@@ -30,6 +30,18 @@ const AutoRotatingCarousel = () => {
       alt: "Transform Your Mental Wellness",
       title: "Transform Your Mental Wellness",
       description: "Personalized AI-driven experiences to help you build resilience and emotional strength."
+    },
+    {
+      src: "/l4.png",
+      alt: "Transform Your Mental Wellness",
+      title: "Discover Restful Nights",
+      description: "Drift into deep, restorative sleep with immersive VR experiences that calm your mind and body."
+    },
+    {
+      src: "/E2.svg",
+      alt: "Transform Your Mental Wellness",
+      title: "Connect Your Mind Globally",
+      description: "Join live sessions and connect with Mind Experts inside our immersive global hub."
     }
   ];
   // Clone the first slide for seamless looping

@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2" onClick={handleNavClick}>
-            <span className="text-2xl font-bold text-gray-900">MindPlayer</span>
+            <span className="text-2xl font-bold text-gray-900">Mind Player</span>
           </Link>
 
           {/* Desktop Navigation */}

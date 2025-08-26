@@ -1,12 +1,12 @@
 
 const Distinction = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen px-2 sm:px-4">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-10 sm:py-16 md:py-20">
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center">
+    <div className="flex flex-col items-center justify-center min-h-[40vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen px-2 sm:px-4">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-3 sm:py-12 md:py-16">
+        <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 justify-center items-start">
           {/* Left Content */}
           <div
-            className="w-full max-w-full lg:w-[600px] h-[220px] sm:h-[320px] md:h-[400px] lg:h-[640px] p-4 sm:p-8 rounded-3xl shadow-none border-none flex flex-col"
+            className="w-full max-w-full lg:w-[600px] h-auto p-2 sm:p-8 rounded-3xl shadow-none border-none flex flex-col justify-start"
           >
             <div
               className="text-base sm:text-[16px] font-semibold text-[#0D0A09] mb-1"
@@ -16,9 +16,7 @@ const Distinction = () => {
             <h2
               className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#0D0A09] leading-[1.1] mb-2"
             >
-              Where Innovation
-              <br />
-              Meets Inner Calm
+              Empowering Minds Through Technology
             </h2>
           </div>
           {/* Right Content - Features List */}

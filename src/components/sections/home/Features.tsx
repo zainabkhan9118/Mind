@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 
 const carouselData = [
   {
@@ -56,7 +57,7 @@ const carouselData = [
     ],
     image: '/Feature 3.jpg',
     alt: 'Wellness Community',
-    button: 'Explore All Featuresy',
+    button: 'Explore All Features',
   },
   {
     subtitle: 'Features',
@@ -82,40 +83,69 @@ const carouselData = [
 const Features = () => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
+  const timerRef = React.useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+  // Helper to clear and restart timer
+  const restartTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
       setDirection(1);
       setIndex((prev) => (prev + 1) % carouselData.length);
-    }, 8000); 
-    return () => clearInterval(interval);
-  }, []);
+    }, 8000);
+  };
+
+  useEffect(() => {
+    restartTimer();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+    // eslint-disable-next-line
+  }, [index]);
 
   const current = carouselData[index];
 
   // Variants for smooth animation
-  const containerVariants = {
-    hidden: { opacity: 0, x: direction > 0 ? 50 : -50 },
-    visible: { 
-      opacity: 1, 
-      x: 0,
-      transition: {
-        type: "spring" as const,
-        stiffness: 100,
-        damping: 20,
-        when: "beforeChildren" as const,
-        staggerChildren: 0.1
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
+  const containerVariants = isMobile
+    ? {
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 0.4,
+            when: "beforeChildren" as const,
+            staggerChildren: 0.1
+          }
+        },
+        exit: {
+          opacity: 0,
+          transition: {
+            duration: 0.3
+          }
+        }
       }
-    },
-    exit: { 
-      opacity: 0, 
-      x: direction > 0 ? -50 : 50,
-      transition: {
-        ease: "easeInOut" as const,
-        duration: 0.4
-      }
-    }
-  };
+    : {
+        hidden: { opacity: 0, x: direction > 0 ? 50 : -50 },
+        visible: {
+          opacity: 1,
+          x: 0,
+          transition: {
+            type: "spring" as const,
+            stiffness: 100,
+            damping: 20,
+            when: "beforeChildren" as const,
+            staggerChildren: 0.1
+          }
+        },
+        exit: {
+          opacity: 0,
+          x: direction > 0 ? -50 : 50,
+          transition: {
+            ease: "easeInOut" as const,
+            duration: 0.4
+          }
+        }
+      };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -209,13 +239,14 @@ const Features = () => {
         </div>
       </div>
       {/* Navigation Dots */}
-  <div className="flex justify-center items-center gap-3 mt-4 mb-10">
+  <div className="min-h-[40px] flex justify-center items-center gap-3 mt-4 mb-10">
         {carouselData.map((_, i) => (
           <button
             key={i}
             onClick={() => {
               setDirection(i > index ? 1 : -1);
               setIndex(i);
+              setTimeout(restartTimer, 0); // Reset timer after click
             }}
             className={`w-3 h-3 rounded-full transition-all duration-300 border-2 focus:outline-none ${
               i === index

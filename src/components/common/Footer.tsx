@@ -1,7 +1,9 @@
 
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
-import AutoRotatingCarousel  from './AutoRotatingCarousel';
+import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
+import AutoRotatingCarousel from './AutoRotatingCarousel';
 import { Link } from 'react-router-dom';
+import { SiTiktok } from 'react-icons/si';
+
 
 
 
@@ -79,9 +81,9 @@ const Footer = () => {
 
       {/* Main Footer Navigation */}
       <div className="bg-[#FBFAFE] py-16 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-x-4 gap-y-10">
           {/* Quick Links */}
-          <div>
+          <div className="text-center xl:text-left">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="text-gray-400 hover:text-black"
@@ -100,30 +102,32 @@ const Footer = () => {
               onClick={handleNavClick}
               >
                 Experiences</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-black"
-              onClick={handleNavClick}
-              >
-                Contact Us</Link></li>
+              
               <li><Link to="/pricing" className="text-gray-400 hover:text-black"
               onClick={handleNavClick}
               >
                 Pricing</Link></li>
+
+              <li><Link to="/contact" className="text-gray-400 hover:text-black"
+              onClick={handleNavClick}
+              >
+                Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Our Features */}
-          <div>
+          <div className="text-center xl:text-left">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Our Features</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-400 hover:text-black">Mind Sessions for Inner Calm</li>
-              <li className="text-gray-400 hover:text-black">Holistic Mental Wellness</li>
+              <li className="text-gray-400 hover:text-black">Healing Music & Frequencies</li>
               <li className="text-gray-400 hover:text-black">AI-Powered Mind Coach</li>
               <li className="text-gray-400 hover:text-black">Supportive Wellness Community</li>
             </ul>
           </div>
 
           {/* Experiences */}
-          <div>
+          <div className="text-center xl:text-left">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-400 hover:text-black">Deep VR Guided Meditation</li>
@@ -133,7 +137,7 @@ const Footer = () => {
           </div>
 
           {/* Why Choose Us */}
-          <div>
+          <div className="text-center xl:text-left">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Why Choose Us</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-400 hover:text-black">Calm Your Inner World</li>
@@ -144,15 +148,26 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Help */}
+          <div className="text-center xl:text-left">
+            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Help</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="text-gray-400 hover:text-black">FAQs</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Terms of Use</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-black">Cookie Policy</a></li>
+            </ul>
+          </div>
+
           {/* Connect With Us */}
-          <div>
+          <div className="text-center xl:text-left">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Connect With Us</h3>
             <ul className="space-y-2 text-sm">
-              <li className="text-gray-400 hover:text-black">Facebook Page</li>
-              <li className="text-gray-400 hover:text-black">Instagram Gallery</li>
-              <li className="text-gray-400 hover:text-black">Twitter Updates</li>
-              <li className="text-gray-400 hover:text-black">LinkedIn Profile</li>
-              <li className="text-gray-400 hover:text-black">YouTube Channel</li>
+              <li><a href="https://www.facebook.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">Facebook Page</a></li>
+              <li><a href="https://www.instagram.com/mindplayerapp/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">Instagram Gallery</a></li>
+              <li><a href="https://x.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">X Updates</a></li>
+              <li><a href="http://www.linkedin.com/company/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">LinkedIn Profile</a></li>
+              <li><a href="https://www.tiktok.com/@mindplayerapp?_t=ZG-8z4AFuVLHSC&_r=1" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">TikTok Videos</a></li>
             </ul>
           </div>
         </div>
@@ -161,7 +176,7 @@ const Footer = () => {
       {/* MindPlayer Logo Before Divider */}
       <div className="bg-[#FBFAFE] pt-12 pb-6 px-4 text-[#0D0A09]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl font-bold">MindPlayer</h2>
+          <h2 className="text-xl font-bold">Mind Player</h2>
         </div>
       </div>
       
@@ -174,20 +189,20 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-black">
+              <a href="https://www.facebook.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="Facebook">
                 <Facebook size={16} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-black">
+              <a href="https://www.instagram.com/mindplayerapp/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="Instagram">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-black">
-                <Twitter size={16} />
+              <a href="https://x.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="X (Twitter)">
+                <X size={16} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-black">
+              <a href="http://www.linkedin.com/company/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="LinkedIn">
                 <Linkedin size={16} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-black">
-                <Youtube size={16} />
+              <a href="https://www.tiktok.com/@mindplayerapp?_t=ZG-8z4AFuVLHSC&_r=1" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="TikTok">
+                <SiTiktok size={16} />
               </a>
             </div>
           </div>

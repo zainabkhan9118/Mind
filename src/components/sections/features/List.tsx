@@ -20,7 +20,7 @@ const List = () => {
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
         <div
-            className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[762px] overflow-hidden shadow-none border-none bg-transparent"
+            className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[762px] overflow-hidden shadow-none border-none bg-transparent"
           >
             <img
               src="/Feature 1.jpg"
@@ -171,7 +171,7 @@ const List = () => {
           </div>
 
           <div
-            className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[686px] overflow-hidden shadow-none border-none bg-transparent"
+            className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[686px] overflow-hidden shadow-none border-none bg-transparent"
           >
             <img
               src="/Feature 2.png"
@@ -186,7 +186,7 @@ const List = () => {
 
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
           <div
-            className="w-full lg:w-1/2 h-[260px] sm:h-[350px] md:h-[420px] lg:h-[658px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
+            className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[420px] lg:h-[658px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
           >
             <img
               src="/Feature 3.jpg"
@@ -306,7 +306,7 @@ const List = () => {
           </div>
 
           <div
-            className="w-full lg:w-1/2 h-[260px] sm:h-[350px] md:h-[420px] lg:h-[610px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
+            className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[420px] lg:h-[610px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
           >
             <img
               src="/Feature 4.png"
