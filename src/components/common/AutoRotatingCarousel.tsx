@@ -38,7 +38,7 @@ const AutoRotatingCarousel = () => {
       description: "Drift into deep, restorative sleep with immersive VR experiences that calm your mind and body."
     },
     {
-      src: "/E2.svg",
+      src: "/l5.png",
       alt: "Transform Your Mental Wellness",
       title: "Connect Your Mind Globally",
       description: "Join live sessions and connect with Mind Experts inside our immersive global hub."
