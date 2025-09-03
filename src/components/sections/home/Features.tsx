@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const carouselData = [
   {
@@ -84,6 +85,7 @@ const Features = () => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
   const timerRef = React.useRef<NodeJS.Timeout | null>(null);
+  const navigate = useNavigate();
 
   // Helper to clear and restart timer
   const restartTimer = () => {
@@ -160,7 +162,7 @@ const Features = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#F2F2F2]">
+    <div className="flex flex-col items-center justify-center h-[1200px] sm:h-[900px] md:min-h-screen bg-[#F2F2F2] mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <AnimatePresence mode="wait" custom={direction}>
@@ -174,7 +176,7 @@ const Features = () => {
               className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
             >
               {/* Left Content */}
-              <div className="h-auto md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col transition-all duration-700">
+              <div className="h-[400px] md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-between transition-all duration-700">
                 {current.subtitle && (
                   <motion.div 
                     variants={itemVariants}
@@ -191,13 +193,13 @@ const Features = () => {
                 </motion.h2>
                 <motion.p 
                   variants={itemVariants}
-                  className="text-base sm:text-lg text-gray-600 max-w-lg leading-snug"
+                  className="text-base sm:text-lg text-gray-600 max-w-lg leading-snug min-h-[90px]"
                 >
                   {current.description}
                 </motion.p>
                 <motion.div 
                   variants={itemVariants}
-                  className="space-y-2 mt-4 sm:mt-6"
+                  className="space-y-2 mt-4 sm:mt-6 min-h-[100px]"
                 >
                   {current.list.map((item, i) => (
                     <motion.div 
@@ -217,7 +219,13 @@ const Features = () => {
                   variants={itemVariants}
                   className="flex flex-col sm:flex-row gap-4 mt-auto pt-8 sm:pt-12 lg:pt-16"
                 >
-                  <button className="bg-[#0D0A090D] border border-gray-300 text-[#0D0A09] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-gray-200 transition-colors duration-200">
+                  <button className="bg-[#0D0A090D] border border-gray-300 text-[#0D0A09] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-gray-200 transition-colors duration-200"
+                    onClick={() => {
+                      // Handle button click
+                      navigate('/features')
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                  >
                     {current.button}
                   </button>
                 </motion.div>
@@ -225,12 +233,12 @@ const Features = () => {
               {/* Right Content - Carousel Image */}
               <motion.div 
                 variants={itemVariants}
-                className="h-auto sm:h-[450px] md:h-[500px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
+                className="h-[500px] sm:h-[450px] md:h-[500px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
               >
                 <img
                   src={current.image}
                   alt={current.alt}
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top"
                   loading="lazy"
                 />
               </motion.div>

@@ -4,17 +4,12 @@ import { useState, useEffect, useRef } from 'react';
 
 const testimonials = [
   {
-    quote: "Mind Player has transformed my approach to mental wellness. The immersive experiences are truly life-changing!",
-    name: "Jane Doe",
-    title: "CEO, Wellness Corp"
-  },
-  {
-    quote: "The VR sessions are so calming and effective. I feel more focused and relaxed every day.",
+  quote: "Using the VR sessions daily helps me stay calm, and more relaxed throughout my routine.",
     name: "John Smith",
     title: "Product Designer"
   },
   {
-    quote: "I love how personalized and interactive the platform is. It’s a game changer for my mental health routine!",
+  quote: "The platform is easy to use and makes my daily mental wellness routine enjoyable and effective.",
     name: "Sara Lee",
     title: "Entrepreneur"
   },
@@ -63,7 +58,7 @@ const Reviews = () => {
     <div className='bg-[#FBFAFE] justify-center items-center flex flex-col py-20'>
       <div className="max-w-4xl mx-auto px-4">
         {/* Testimonial Card with Border */}
-        <div className="rounded-lg p-8 mb-6 transition-all duration-500">
+  <div className="rounded-lg p-8 mb-6 transition-all duration-500 min-h-[220px] md:min-h-[140px] flex flex-col justify-center">
           <h5 className='text-xl md:text-2xl text-center text-[#0D0A09] font-bold mb-4 max-w-3xl mx-auto'>
             "{testimonial.quote}"
           </h5>

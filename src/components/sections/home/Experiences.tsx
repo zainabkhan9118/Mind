@@ -10,16 +10,15 @@ const Experiences = () => {
   };
 
   return (
-    <div className="py-20 bg-white">
+  <div className=" bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
             <div className="text-center mb-16">
-              <p className="text-lg text-gray-900 max-w-4xl mx-auto">
+              <p className="text-lg text-gray-900 max-w-4xl mx-auto mt-[-30px] mb-2">
                 Experiences
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                <span className="inline sm:inline">Escape.Explore</span>
-                <span className="block sm:inline">.Evolve</span>
+                <span className="whitespace-nowrap block text-balance">Escape.Explore.Evolve</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-4xl mx-auto">
                 Step into virtual worlds that relax, heal, and inspire by experiencing guided escapes designed for clarity, calm, and growth.
@@ -44,25 +43,27 @@ const Experiences = () => {
                       Step Into Stunning <br />360° & VR Worlds
                     </h3>
 
-                    {/* Icon + Paragraph */}
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="text-sm sm:text-base text-left">
-                        Wander through breathtaking VR environments,<br />
-                        where immersive visuals and landscapes transport<br />
-                        your mind to new states of calm and clarity.
+                    {/* Text - 4 lines for mobile readability */}
+                    <div>
+                      <p className="text-sm sm:text-base text-left leading-snug">
+                        Wander through breathtaking VR environments<br />
+                        and discover immersive visuals.<br />
+                        Let landscapes transport your mind<br />
+                        to new states of calm and clarity.
                       </p>
-
-                      <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 mt-1 cursor-pointer transition-all">
-                        <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
-                        <button
-                          className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                          onClick={() => {
-                            handleNavClick();
-                            navigate('/learn-more');
-                          }}
-                        >
-                          Learn More
-                        </button>
+                      <div className="mt-6 sm:mt-8 md:mt-4 lg:mt-2 flex justify-end">
+                        <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 cursor-pointer transition-all">
+                          <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
+                          <button
+                            className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                            onClick={() => {
+                              handleNavClick();
+                              navigate('/learn-more');
+                            }}
+                          >
+                            Learn More
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -82,21 +83,26 @@ const Experiences = () => {
                   {/* Content Section */}
                   <div className="mt-6 sm:mt-10 md:mt-16">
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4 text-left">Craft Your Own<br /> Mental Journey</h3>
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="text-sm sm:text-base text-left">
-                        Blend your favorite sounds, visuals, and sessions to<br /> create fully personalized immersive experiences—<br />tailored to your mood and goals.
+                    <div>
+                      <p className="text-sm sm:text-base text-left leading-snug">
+                        Blend your favorite sounds and visuals<br />
+                        with guided sessions to create<br />
+                        fully personalized immersive experiences—<br />
+                        tailored to your mood and goals.
                       </p>
-                      <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 mt-1 cursor-pointer transition-all">
-                        <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
-                        <button
-                          className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                          onClick={() => {
-                          handleNavClick();
-                          navigate('/learn-more');
-                        }}
-                        >
-                          Learn More
-                        </button>
+                      <div className="mt-6 sm:mt-8 md:mt-4 lg:mt-2 flex justify-end">
+                        <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 cursor-pointer transition-all">
+                          <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
+                          <button
+                            className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                            onClick={() => {
+                              handleNavClick();
+                              navigate('/learn-more');
+                            }}
+                          >
+                            Learn More
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 
 const Explaination = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10 sm:py-16 md:py-20 px-2 sm:px-4 max-w-7xl mx-auto gap-10 sm:gap-16 md:gap-20">
+  <div className="flex flex-col items-center justify-center py-10 sm:py-16 md:py-20 px-2 sm:px-4 max-w-7xl mx-auto gap-8 sm:gap-12 md:gap-20">
       
       {/* Mission Section */}
       <div className="w-full flex flex-col md:flex-row gap-6 sm:gap-10">
@@ -22,7 +22,8 @@ const Explaination = () => {
         </div>
       </div>
 
-      {/* Vision Section */}
+  {/* Vision Section - with reduced top margin in mobile */}
+  <div className="mt-3 sm:mt-4 md:mt-0"></div>
       <div className="w-full flex flex-col md:flex-row gap-6 sm:gap-10">
         <div className="w-full md:w-1/2">
           <h3 className="text-base sm:text-[16px] text-[#0D0A09] mb-2 sm:mb-4">Our Vision</h3>

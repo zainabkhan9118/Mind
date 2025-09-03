@@ -40,7 +40,7 @@ const MentalWellness = () => {
                     Step into a world where neuroscience, AI, and VR unite to help you rest, grow, and transform your mental state.
                   </CardDescription>
                 </div>
-                <div className="mt-4">
+                <div className="mt-20">
                   <button className="text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900 flex items-center group">
                     Who We Are 
                     <svg className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ const MentalWellness = () => {
                 </div>
               </div>
               {/* Right Image */}
-              <div className="relative h-44 sm:h-56 md:h-full order-1 md:order-2 md:w-1/2 overflow-hidden">
+              <div className="relative h-48 sm:h-56  md:h-full order-1 md:order-2 md:w-1/2 overflow-hidden">
                 <img 
                   src="/Placeholder Image.png" 
                   alt="Person in VR experience" 
@@ -75,7 +75,7 @@ const MentalWellness = () => {
                   Immersive mental wellness that unlocks growth and peace of mind.
                 </CardDescription>
               </CardHeader>
-              <CardFooter className="p-0 pt-3">
+              <CardFooter className="p-0 pt-3 mt-2 sm:mt-4 md:mt-0">
                 <button className="text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900 flex items-center group">
                   Our Vision 
                   <svg className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
