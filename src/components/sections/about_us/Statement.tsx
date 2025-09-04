@@ -1,7 +1,7 @@
 
 const Statement = () => {
   return (
-      <div className='bg-[#FBFAFE] flex flex-col items-center justify-center py-10 sm:py-16 md:py-20 px-2 sm:px-4'>
+      <div className='bg-[#e5e5e5] flex flex-col items-center justify-center py-10 sm:py-16 md:py-20 px-2 sm:px-4'>
         <div className="w-full max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto">
           {/* Testimonial Card with Border */}
           <div className="rounded-lg p-4 sm:p-6 md:p-8 mb-4">

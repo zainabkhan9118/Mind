@@ -55,7 +55,7 @@ const Reviews = () => {
   const testimonial = testimonials[current];
 
   return (
-    <div className='bg-[#FBFAFE] justify-center items-center flex flex-col py-20'>
+    <div className='bg-[#e5e5e5] justify-center items-center flex flex-col py-20'>
       <div className="max-w-4xl mx-auto px-4">
         {/* Testimonial Card with Border */}
   <div className="rounded-lg p-8 mb-6 transition-all duration-500 min-h-[220px] md:min-h-[140px] flex flex-col justify-center">

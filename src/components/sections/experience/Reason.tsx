@@ -1,7 +1,7 @@
 
 const Reason = () => {
   return (
-   <div className='bg-[#FBFAFE] justify-center items-center flex flex-col py-20'>
+   <div className='bg-[#e5e5e5] justify-center items-center flex flex-col py-20'>
       <div className="max-w-4xl mx-auto px-4">
         {/* Testimonial Card with Border */}
         <p className='font-wix font-semibold text-[16px] leading-[150%] tracking-normal text-center text-[#0D0A09] mb-6'>

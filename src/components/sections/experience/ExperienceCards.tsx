@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const ExperienceCards = () => {
   return (
-    <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 gap-[80px]">
-     <div className="flex flex-col lg:flex-col gap-4 sm:gap-6 lg:gap-8 justify-start items-self">
+  <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-0 pt-2 sm:py-8 lg:py-10 gap-4 sm:gap-10">
+     <div className="flex flex-col lg:flex-col gap-2 sm:gap-6 lg:gap-8 justify-start items-self">
             <h3 className="font-bold text-[24px] sm:text-[28px] lg:text-[32px] leading-[120%] tracking-[-0.01em] font-[Wix Madefor Text]">
                  A simple path to deeper calm, clarity,<br className="hidden sm:block" /> <span className="sm:hidden"></span>and personal growth!
             </h3>
@@ -15,10 +15,10 @@ const ExperienceCards = () => {
         </div>
 
         {/* Card Section */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-6 flex-wrap md:flex-nowrap overflow-x-auto md:overflow-x-visible pb-2 scrollbar-hide mt-6">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 flex-wrap md:flex-nowrap overflow-x-auto md:overflow-x-visible pb-0 scrollbar-hide">
           {/* Card 1 - Unlock a New State of Mind */}
-          <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[1050px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
-            <div className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
+          <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[650px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
+            <div className="w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
               <img src="/E1.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
             </div>
             <CardContent className="p-6 bg-white flex-1 flex flex-col justify-start">
@@ -39,8 +39,8 @@ const ExperienceCards = () => {
 
 
             {/* Card 2 - Redefining the Future of Mental Health */}
-            <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[1050px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
-              <div className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
+            <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[650px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
+              <div className="w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
                 <img src="/E2.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
               </div>
               <CardContent className="p-6 bg-white flex-1 flex flex-col justify-start">

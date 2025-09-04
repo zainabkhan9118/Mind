@@ -32,7 +32,7 @@ const AutoRotatingCarousel = () => {
       description: "Personalized AI-driven experiences to help you build resilience and emotional strength."
     },
     {
-      src: "/l4.png",
+      src: "/l2.png",
       alt: "Transform Your Mental Wellness",
       title: "Discover Restful Nights",
       description: "Drift into deep, restorative sleep with immersive VR experiences that calm your mind and body."

@@ -26,7 +26,7 @@ const MentalWellness = () => {
         <div className="flex flex-col md:flex-row gap-6 overflow-x-auto md:overflow-x-visible pb-2 scrollbar-hide">
           {/* Card 1 - Unlock a New State of Mind */}
           <Card
-            className="group hover:shadow-lg w-full md:w-[48%] lg:w-[640px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 bg-[#0D0A090D] flex-shrink-0 cursor-pointer"
+            className="group hover:shadow-lg w-full md:w-[48%] lg:w-[640px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="flex flex-col md:flex-row h-full">
@@ -63,7 +63,7 @@ const MentalWellness = () => {
 
           {/* Card 2 - Redefining the Future of Mental Health */}
           <Card
-            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#0D0A090D] flex-shrink-0 cursor-pointer"
+            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="flex-grow flex flex-col justify-between px-4 sm:px-6 pt-4 sm:pt-6 pb-0">
@@ -97,7 +97,7 @@ const MentalWellness = () => {
 
           {/* Card 3 - Empower Every Mind to Reach Its Full Potential */}
           <Card
-            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#0D0A090D] flex-shrink-0 cursor-pointer"
+            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="flex-grow flex flex-col justify-between px-4 sm:px-6 pt-4 sm:pt-6 pb-0">

@@ -17,7 +17,7 @@ const List = () => {
 
 
         {/*1st Card Section */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
         <div
             className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[762px] overflow-hidden shadow-none border-none bg-transparent"
@@ -106,7 +106,7 @@ const List = () => {
         </div>
 
         {/* 2nd Card Section */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
           {/* Left Content */}
           <div
@@ -184,7 +184,7 @@ const List = () => {
 
         {/*3rd Card Section */}
 
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
           <div
             className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[420px] lg:h-[658px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
           >
@@ -253,7 +253,7 @@ const List = () => {
          {/* 4th Card Section */}
       
 
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#0D0A090D] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
           {/* Left Content */}
           <div
             className="w-full lg:w-1/2 h-auto p-5 sm:p-6 lg:p-8 shadow-none border-none flex flex-col max-w-full lg:max-w-[600px]"
