@@ -81,9 +81,9 @@ const Footer = () => {
 
       {/* Main Footer Navigation */}
       <div className="bg-[#FBFAFE] py-16 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-x-4 gap-y-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 gap-x-4 gap-y-10">
           {/* Quick Links */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="text-gray-400 hover:text-black"
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
 
           {/* Our Features */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Our Features</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-400 hover:text-black">Mind Sessions for Inner Calm</li>
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
 
           {/* Experiences */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-400 hover:text-black">Deep VR Guided Meditation</li>
@@ -137,7 +137,7 @@ const Footer = () => {
           </div>
 
           {/* Why Choose Us */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Why Choose Us</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-400 hover:text-black">Calm Your Inner World</li>
@@ -149,7 +149,7 @@ const Footer = () => {
           </div>
 
           {/* Help */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Help</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-gray-400 hover:text-black">FAQs</a></li>
@@ -160,7 +160,7 @@ const Footer = () => {
           </div>
 
           {/* Connect With Us */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Connect With Us</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="https://www.facebook.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">Facebook Page</a></li>
@@ -174,7 +174,7 @@ const Footer = () => {
       </div>
 
       {/* MindPlayer Logo Before Divider */}
-      <div className="bg-[#FBFAFE] pt-12 pb-6 px-4 text-[#0D0A09]">
+      <div className="bg-[#FBFAFE] pt-2 pb-6 px-4 text-[#0D0A09]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-xl font-bold">Mind Player</h2>
         </div>
