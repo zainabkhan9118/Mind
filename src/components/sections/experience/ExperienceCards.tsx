@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const ExperienceCards = () => {
   return (
-  <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-0 pt-2 sm:py-8 lg:py-10 gap-4 sm:gap-10">
+  <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-0 pt-2 sm:py-8 lg:py-6 xl:py-10 gap-4 sm:gap-8 lg:gap-6 xl:gap-10">
      <div className="flex flex-col lg:flex-col gap-2 sm:gap-6 lg:gap-8 justify-start items-self">
             <h3 className="font-bold text-[24px] sm:text-[28px] lg:text-[32px] leading-[120%] tracking-[-0.01em] font-[Wix Madefor Text]">
                  A simple path to deeper calm, clarity,<br className="hidden sm:block" /> <span className="sm:hidden"></span>and personal growth!
@@ -15,23 +15,23 @@ const ExperienceCards = () => {
         </div>
 
         {/* Card Section */}
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 flex-wrap md:flex-nowrap overflow-x-auto md:overflow-x-visible pb-0 scrollbar-hide">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-4 lg:gap-6 xl:gap-6 flex-wrap md:flex-nowrap overflow-x-auto md:overflow-x-visible pb-0 scrollbar-hide">
           {/* Card 1 - Unlock a New State of Mind */}
-          <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[650px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
-            <div className="w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
+          <Card className="group w-full md:w-[48%] lg:w-[624px] h-[650px] sm:h-[700px] md:h-[900px] lg:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
+            <div className="w-full h-[350px] sm:h-[500px] md:h-[550px] lg:h-[600px] xl:h-[700px] flex-shrink-0">
               <img src="/E1.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
             </div>
-            <CardContent className="p-6 bg-white flex-1 flex flex-col justify-start">
+            <CardContent className="p-4 sm:p-6 bg-white flex-1 flex flex-col justify-start">
               {/* New Heading */}
-              <h3 className="font-wix font-bold text-2xl sm:text-3xl text-[#0D0A09] leading-[120%] tracking-[-0.01em]  mb-2">
+              <h3 className="font-wix font-bold text-2xl sm:text-3xl text-[#0D0A09] leading-[120%] tracking-[-0.01em] mb-2">
                 360° & VR Worlds
               </h3>
               {/* Subtitle */}
-              <p className="font-wix text-base font-semibold text-[#0D0A09]  leading-[150%] mb-4">
+              <p className="font-wix text-base font-semibold text-[#0D0A09] leading-[150%] mb-4">
                 Step into breathtaking mental landscapes.
               </p>
               {/* Paragraph */}
-              <p className="font-wix text-sm sm:text-base text-gray-600  leading-[150%] mb-6">
+              <p className="font-wix text-sm sm:text-base text-gray-600 leading-[150%] mb-6">
                 Let your mind wander through beautifully crafted virtual environments — from serene natural retreats to abstract dreamscapes. These 360° VR experiences are designed to shift your state of consciousness, reduce anxiety, and cultivate mindfulness through immersive visuals and spatial audio.
               </p>
             </CardContent>
@@ -39,21 +39,21 @@ const ExperienceCards = () => {
 
 
             {/* Card 2 - Redefining the Future of Mental Health */}
-            <Card className="group  w-full md:w-[48%] lg:w-[624px] h-[650px] sm:h-[700px] md:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
-              <div className="w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex-shrink-0">
+            <Card className="group w-full md:w-[48%] lg:w-[624px] h-[650px] sm:h-[700px] md:h-[900px] lg:h-[950px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 bg-white flex flex-col">
+              <div className="w-full h-[350px] sm:h-[500px] md:h-[550px] lg:h-[600px] xl:h-[700px] flex-shrink-0">
                 <img src="/E2.svg" alt="Person using VR headset" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
               </div>
-              <CardContent className="p-6 bg-white flex-1 flex flex-col justify-start">
+              <CardContent className="p-4 sm:p-6 bg-white flex-1 flex flex-col justify-start">
               {/* New Heading */}
-              <h3 className="font-wix font-bold text-2xl sm:text-3xl text-[#0D0A09] leading-[120%] tracking-[-0.01em]  mb-2">
+              <h3 className="font-wix font-bold text-2xl sm:text-3xl text-[#0D0A09] leading-[120%] tracking-[-0.01em] mb-2">
                 Custom Minds
               </h3>
               {/* Subtitle */}
-              <p className="font-wix text-base font-semibold text-[#0D0A09]  leading-[150%] mb-4">
+              <p className="font-wix text-base font-semibold text-[#0D0A09] leading-[150%] mb-4">
                 Design your own mental journey.
               </p>
               {/* Paragraph */}
-              <p className="font-wix text-sm sm:text-base text-gray-600  leading-[150%] mb-6">
+              <p className="font-wix text-sm sm:text-base text-gray-600 leading-[150%] mb-6">
                 Every mind is unique — and so are your needs. Custom Minds lets you create personalized experiences by blending your favorite visuals, sounds, and session types into one. Whether you want to relax, reflect, or re-energize, you can craft the perfect mental escape.
               </p>
               
