@@ -83,7 +83,7 @@ const Footer = () => {
       <div className="bg-[#FBFAFE] py-16 px-4 text-[#0D0A09]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 gap-x-4 gap-y-10">
           {/* Quick Links */}
-          <div className="text-center xl:text-left min-w-0">
+          <div className="text-center xl:text-left ">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="text-gray-400 hover:text-black"
