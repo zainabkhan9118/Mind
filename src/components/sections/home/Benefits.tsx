@@ -2,7 +2,7 @@
 const Benefits = () => {
   return (
     <div>
-  <div className="pt-8 pb-4 sm:py-10 bg-white">
+  <div className="pt-8 pb-4 sm:py-10 lg:py-12 xl:py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
             <div className="text-center mb-4 sm:mb-16 space-y-2 sm:space-y-4">
@@ -20,24 +20,24 @@ const Benefits = () => {
             {/* Card Section */}
             <div className="relative mt-16">
               {/* Three-column layout with brain in center */}
-              <div className="flex flex-col lg:flex-row justify-between items-center">
+              <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start">
                 {/* Left Column */}
-                <div className="w-full lg:w-1/3 space-y-4">
-                  <div className="text-center p-4">
+                <div className="w-full lg:w-[30%] xl:w-1/3 space-y-4 lg:space-y-6">
+                  <div className="text-center lg:text-left p-4 lg:p-2">
                     <h3 className="font-bold text-xl mb-2">Calm Your<br/> Inner World</h3>
                     <p className="text-sm text-gray-600">
                       Release tension and anxiety through<br/> immersive VR journeys and focused <br/>breathwork.
                     </p>
                   </div>
                   
-                  <div className="text-center p-4">
+                  <div className="text-center lg:text-left p-4 lg:p-2">
                     <h3 className="font-bold text-xl mb-2">Feel Wonderfully <br/>Present</h3>
                     <p className="text-sm text-gray-600">
                       Step into awe-inspiring digital spaces that<br/> reconnect you to the here and now.
                     </p>
                   </div>
                   
-                  <div className="text-center p-4">
+                  <div className="text-center lg:text-left p-4 lg:p-2">
                     <h3 className="font-bold text-xl mb-2">Find Your<br/> Mental Reset</h3>
                     <p className="text-sm text-gray-600">
                       Tap into deep relaxation and emotional<br/> restoration whenever or wherever you<br/> need it.
@@ -46,12 +46,12 @@ const Benefits = () => {
                 </div>
                 
                 {/* Center Column with Brain Image */}
-                <div className="w-full lg:w-1/3 flex justify-center my-12 lg:my-0">
+                <div className="w-full lg:w-[40%] xl:w-1/3 flex justify-center my-12 lg:my-0">
                   <div className="rounded-4xl overflow-hidden flex items-center justify-center">
                     <video
                       src="/Brain.mp4"
                       poster="/Brain.png"
-                      className="w-[440px] h-[440px] md:w-[400px] md:h-[500px] object-cover"
+                      className="w-[300px] h-[300px] md:w-[320px] md:h-[320px] lg:w-[280px] lg:h-[350px] xl:w-[400px] xl:h-[500px] object-cover"
                       autoPlay
                       loop
                       muted
@@ -62,22 +62,22 @@ const Benefits = () => {
                 </div>
                 
                 {/* Right Column */}
-                <div className="w-full lg:w-1/3 space-y-4">
-                  <div className="text-center p-4">
+                <div className="w-full lg:w-[30%] xl:w-1/3 space-y-4 lg:space-y-6">
+                  <div className="text-center lg:text-right p-4 lg:p-2">
                     <h3 className="font-bold text-xl mb-2">Strengthen from the<br/> Inside Out</h3>
                     <p className="text-sm text-gray-600">
                       Build resilience and self-trust with<br/> personalized guidance and empowering<br/> mind sessions.
                     </p>
                   </div>
                   
-                  <div className="text-center p-4">
+                  <div className="text-center lg:text-right p-4 lg:p-2">
                     <h3 className="font-bold text-xl mb-2">Ease Into<br/> Restful Sleep</h3>
                     <p className="text-sm text-gray-600">
                       Unwind with sleep-inducing sounds and<br/> stories designed to gently quiet the mind.
                     </p>
                   </div>
                   
-                  <div className="text-center p-4">
+                  <div className="text-center lg:text-right p-4 lg:p-2">
                     <h3 className="font-bold text-xl mb-2">Sharpen Your Mental<br/> Flow</h3>
                     <p className="text-sm text-gray-600">
                       Enhance focus and clarity with sound-<br/>driven tools and AI-powered mind<br/> coaching.
