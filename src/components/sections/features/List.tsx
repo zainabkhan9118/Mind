@@ -2,7 +2,7 @@
 const List = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 w-full">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 py-10 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col gap-8 sm:gap-12 lg:gap-[80px]">
 
         <div className="flex flex-col lg:flex-col gap-4 sm:gap-6 lg:gap-8 justify-start items-self">
@@ -186,7 +186,7 @@ const List = () => {
 
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
           <div
-            className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[420px] lg:h-[658px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
+            className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[450px] lg:h-[658px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
           >
             <img
               src="/Feature 3.jpg"
@@ -306,7 +306,7 @@ const List = () => {
           </div>
 
           <div
-            className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[420px] lg:h-[610px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
+            className="w-full lg:w-1/2 h-[340px] sm:h-[350px] md:h-[450px] lg:h-[610px] max-w-full overflow-hidden shadow-none border-none bg-transparent"
           >
             <img
               src="/Feature 4.png"

@@ -1,7 +1,7 @@
 
 const Explaination = () => {
   return (
-  <div className="flex flex-col items-center justify-center py-10 sm:py-16 md:py-20 px-2 sm:px-4 max-w-7xl mx-auto gap-8 sm:gap-12 md:gap-20">
+  <div className="flex flex-col items-center justify-center py-10 sm:py-16 md:py-20 px-2 sm:px-4 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto gap-8 sm:gap-12 md:gap-20">
       
       {/* Mission Section */}
       <div className="w-full flex flex-col md:flex-row gap-6 sm:gap-10">

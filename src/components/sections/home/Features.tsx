@@ -162,8 +162,8 @@ const Features = () => {
   };
 
   return (
-  <div className="flex flex-col items-center justify-center h-[1200px] sm:h-[900px] md:min-h-screen bg-[#e5e5e5] mt-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
+  <div className="flex flex-col items-center justify-center min-h-[800px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-screen bg-[#e5e5e5] py-10 sm:py-16 md:py-20">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 py-12 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -176,7 +176,7 @@ const Features = () => {
               className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
             >
               {/* Left Content */}
-              <div className="h-[400px] md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-between transition-all duration-700">
+              <div className="h-[400px] md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] xl:max-w-[550px] 2xl:max-w-[500px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-between transition-all duration-700">
                 {current.subtitle && (
                   <motion.div 
                     variants={itemVariants}
@@ -233,7 +233,7 @@ const Features = () => {
               {/* Right Content - Carousel Image */}
               <motion.div 
                 variants={itemVariants}
-                className="h-[500px] sm:h-[450px] md:h-[500px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
+                className="h-[500px] sm:h-[450px] md:h-[550px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
               >
                 <img
                   src={current.image}

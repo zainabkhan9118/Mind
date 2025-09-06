@@ -13,7 +13,7 @@ const Pricing = () => {
       </p>
 
       {/* Cards portion */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] lg:gap-[73px] items-center justify-center w-full mt-10 sm:mt-16">
+      <div className="flex flex-col lg:flex-row gap-6 md:gap-[48px] lg:gap-[73px] items-center justify-center w-full mt-10 sm:mt-16">
         {/* Free Card */}
         <div
           className="bg-[#F8F6FD] border border-[#ece7f6] rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col items-center w-full max-w-xs sm:max-w-md md:max-w-[420px] lg:max-w-[480px] h-auto md:h-[526px] shadow-md"

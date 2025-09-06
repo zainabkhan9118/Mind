@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="bg-black text-white">
       {/* Path to Deeper Calm Section */}
       <div className="bg-white text-black py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12">
           <h2 className="text-3xl font-bold mb-10">
             A simple path to deeper calm, clarity,<br />
             and personal growth!
@@ -81,7 +81,7 @@ const Footer = () => {
 
       {/* Main Footer Navigation */}
       <div className="bg-[#FBFAFE] py-16 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 gap-x-4 gap-y-10">
+        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12 grid grid-cols-1 sm:grid-cols-6 gap-x-4 gap-y-10">
           {/* Quick Links */}
           <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
@@ -175,14 +175,14 @@ const Footer = () => {
 
       {/* MindPlayer Logo Before Divider */}
       <div className="bg-[#FBFAFE] pt-2 pb-6 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12">
           <h2 className="text-xl font-bold">Mind Player</h2>
         </div>
       </div>
       
       {/* Footer Bottom - Simple Version */}
-      <div className="bg-[#FBFAFE] py-6 px-4 text-[#0D0A09] border-t border-gray-200">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-[#FBFAFE] py-6 px-4 text-[#0D0A09]">
+        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500 mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Mind Player. All rights reserved.

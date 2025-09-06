@@ -2,7 +2,7 @@
 const ExperienceHero = () => {
   return (
       <div className="flex flex-col items-center justify-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 w-full">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 py-10 sm:py-16 lg:py-20 w-full">
         <video
           src="/ExpVideo.mp4" // your video file path
           poster="/ExpImage.png"

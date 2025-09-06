@@ -6,6 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1920px', // Custom breakpoint for very large screens
+      },
+      maxWidth: {
+        '8xl': '90rem',   // 1440px
+        '9xl': '96rem',   // 1536px
+        '10xl': '104rem', // 1664px
+        '11xl': '112rem', // 1792px
+        'screen-2xl': '95vw', // 95% of viewport width for very large screens
+      },
+      spacing: {
+        '18': '4.5rem',
+        '20': '5rem',
+        '24': '6rem',
+      },
       colors: {
         // Primary Colors
         "indigo-night": "#2A1A6F",

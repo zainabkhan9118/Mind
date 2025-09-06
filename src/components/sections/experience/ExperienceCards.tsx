@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const ExperienceCards = () => {
   return (
-  <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-0 pt-2 sm:py-8 lg:py-10 gap-4 sm:gap-10">
+  <div className="flex flex-col w-full max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 pb-0 pt-2 sm:py-8 lg:py-10 gap-4 sm:gap-10">
      <div className="flex flex-col lg:flex-col gap-2 sm:gap-6 lg:gap-8 justify-start items-self">
             <h3 className="font-bold text-[24px] sm:text-[28px] lg:text-[32px] leading-[120%] tracking-[-0.01em] font-[Wix Madefor Text]">
                  A simple path to deeper calm, clarity,<br className="hidden sm:block" /> <span className="sm:hidden"></span>and personal growth!

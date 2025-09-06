@@ -122,3 +122,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom responsive utilities for very large screens */
+@media (min-width: 1920px) {
+  .responsive-max-w-screen-2xl {
+    max-width: 95vw;
+  }
+  .responsive-max-w-8xl {
+    max-width: 90rem; /* 1440px */
+  }
+  .responsive-max-w-9xl {
+    max-width: 96rem; /* 1536px */
+  }
+  .responsive-max-w-10xl {
+    max-width: 104rem; /* 1664px */
+  }
+  .responsive-max-w-11xl {
+    max-width: 112rem; /* 1792px */
+  }
+  .responsive-px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .responsive-px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}

@@ -10,8 +10,8 @@ const MentalWellness = () => {
   };
 
   return (
-     <div className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div className="py-10 sm:py-16 md:py-20 bg-white">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
@@ -23,10 +23,10 @@ const MentalWellness = () => {
         </div>
 
         {/* Card Section */}
-        <div className="flex flex-col md:flex-row gap-6 overflow-x-auto md:overflow-x-visible pb-2 scrollbar-hide">
+        <div className="flex flex-col lg:flex-row gap-6 overflow-x-auto lg:overflow-x-visible pb-2 scrollbar-hide">
           {/* Card 1 - Unlock a New State of Mind */}
           <Card
-            className="group hover:shadow-lg w-full md:w-[48%] lg:w-[640px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
+            className="group hover:shadow-lg w-full lg:w-[480px] xl:w-[580px] 2xl:w-[640px] 3xl:w-[720px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="flex flex-col md:flex-row h-full">
@@ -63,7 +63,7 @@ const MentalWellness = () => {
 
           {/* Card 2 - Redefining the Future of Mental Health */}
           <Card
-            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
+            className="group hover:shadow-lg w-full lg:w-[220px] xl:w-[280px] 2xl:w-[320px] 3xl:w-[360px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="flex-grow flex flex-col justify-between px-4 sm:px-6 pt-4 sm:pt-6 pb-0">
@@ -97,7 +97,7 @@ const MentalWellness = () => {
 
           {/* Card 3 - Empower Every Mind to Reach Its Full Potential */}
           <Card
-            className="group hover:shadow-lg w-full md:w-[24%] lg:w-[296px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
+            className="group hover:shadow-lg w-full lg:w-[220px] xl:w-[280px] 2xl:w-[320px] 3xl:w-[360px] h-[380px] sm:h-[420px] md:h-[464px] transition-shadow duration-300 overflow-hidden p-0 flex flex-col bg-[#e5e5e5] flex-shrink-0 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="flex-grow flex flex-col justify-between px-4 sm:px-6 pt-4 sm:pt-6 pb-0">

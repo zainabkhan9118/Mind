@@ -56,7 +56,7 @@ const Reviews = () => {
 
   return (
     <div className='bg-[#e5e5e5] justify-center items-center flex flex-col py-20'>
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl xl:max-w-6xl 2xl:max-w-7xl 3xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20">
         {/* Testimonial Card with Border */}
   <div className="rounded-lg p-8 mb-6 transition-all duration-500 min-h-[220px] md:min-h-[140px] flex flex-col justify-center">
           <h5 className='text-xl md:text-2xl text-center text-[#0D0A09] font-bold mb-4 max-w-3xl mx-auto'>

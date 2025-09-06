@@ -10,11 +10,11 @@ const Experiences = () => {
   };
 
   return (
-  <div className=" bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="bg-white py-10 sm:py-16 md:py-20">
+          <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20">
             {/* Header Section */}
             <div className="text-center mb-16">
-              <p className="text-lg text-gray-900 max-w-4xl mx-auto mt-[-30px] mb-2">
+              <p className="text-lg text-gray-900 max-w-4xl mx-auto mb-2">
                 Experiences
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
@@ -27,9 +27,9 @@ const Experiences = () => {
 
 
             {/* Card Section */}
-            <div className="flex flex-col md:flex-row gap-6 md:gap-6 flex-wrap md:flex-nowrap overflow-x-auto md:overflow-x-visible pb-2 scrollbar-hide">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-6 flex-wrap lg:flex-nowrap overflow-x-auto lg:overflow-x-visible pb-2 scrollbar-hide">
               {/* Card 1 - Unlock a New State of Mind */}
-              <Card className="group hover:shadow-lg w-full md:w-[48%] lg:w-[624px] h-[420px] sm:h-[480px] md:h-[668px] border-none transition-shadow duration-300 overflow-hidden p-0 flex-shrink-0 text-white relative">
+              <Card className="group hover:shadow-lg w-full lg:w-[450px] xl:w-[580px] 2xl:w-[520px] h-[420px] sm:h-[480px] md:h-[668px] border-none transition-shadow duration-300 overflow-hidden p-0 flex-shrink-0 text-white relative">
                 <div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105" style={{ backgroundImage: "url('/Experience.jpg')", backgroundSize: "cover", backgroundPosition: "center" }} />
                 <div className="flex flex-col h-full p-4 sm:p-8 relative z-10">
                   {/* Large Number */}
@@ -73,7 +73,7 @@ const Experiences = () => {
 
 
               {/* Card 2 - Redefining the Future of Mental Health */}
-              <Card className="group hover:shadow-lg text-white w-full md:w-[48%] lg:w-[624px] h-[420px] sm:h-[480px] md:h-[668px] border-none transition-shadow duration-300 overflow-hidden p-0 flex-shrink-0 relative">
+              <Card className="group hover:shadow-lg text-white w-full lg:w-[450px] xl:w-[580px] 2xl:w-[520px] h-[420px] sm:h-[480px] md:h-[668px] border-none transition-shadow duration-300 overflow-hidden p-0 flex-shrink-0 relative">
                 <div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105" style={{ backgroundImage: "url('/2.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                 <div className="flex flex-col h-full p-4 sm:p-8 relative z-10">
                   {/* Large Number */}

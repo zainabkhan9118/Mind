@@ -2,8 +2,8 @@
 const Benefits = () => {
   return (
     <div>
-  <div className="pt-8 pb-4 sm:py-10 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="py-10 sm:py-16 md:py-20 bg-white">
+          <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20">
             {/* Header Section */}
             <div className="text-center mb-4 sm:mb-16 space-y-2 sm:space-y-4">
               <p className="text-lg text-gray-900 max-w-4xl mx-auto">

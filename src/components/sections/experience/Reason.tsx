@@ -2,7 +2,7 @@
 const Reason = () => {
   return (
    <div className='bg-[#e5e5e5] justify-center items-center flex flex-col py-20'>
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl xl:max-w-6xl 2xl:max-w-7xl 3xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20">
         {/* Testimonial Card with Border */}
         <p className='font-wix font-semibold text-[16px] leading-[150%] tracking-normal text-center text-[#0D0A09] mb-6'>
             Why It Matters

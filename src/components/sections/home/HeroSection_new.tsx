@@ -17,15 +17,15 @@ const HeroSection = () => {
       </video>
 
       {/* Foreground Content */}
-      <div className="absolute inset-0 flex items-center text-black justify-start z-10 px-4 sm:px-6 md:px-12">
-        <div className="max-w-[700px]">
+      <div className="absolute inset-0 flex items-center text-black justify-start z-10 px-4 sm:px-6 md:px-12 xl:px-16 2xl:px-20 3xl:px-24">
+        <div className="max-w-[700px] xl:max-w-[800px] 2xl:max-w-[900px] 3xl:max-w-[1000px]">
           <h1
-            className="text-xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4"
+            className="text-xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold leading-tight mb-4"
             style={{ textTransform: "uppercase" }}
           >
             YOUR MIND. LIMITLESS.
           </h1>
-          <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-sm md:max-w-md mb-0">
+          <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl max-w-xs sm:max-w-sm md:max-w-md xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl mb-0">
             Discover the power of immersive mental wellness.
           </p>
         </div>

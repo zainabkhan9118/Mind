@@ -2,7 +2,7 @@
 const Distinction = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-[40vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen px-2 sm:px-4">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-3 sm:py-12 md:py-16">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-2 sm:px-4 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 py-3 sm:py-12 md:py-16">
         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 justify-center items-start">
           {/* Left Content */}
           <div
