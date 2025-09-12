@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="bg-black text-white">
       {/* Path to Deeper Calm Section */}
       <div className="bg-white text-black py-16 px-4">
-        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12">
+       <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-10">
             A simple path to deeper calm, clarity,<br />
             and personal growth!
@@ -81,11 +81,11 @@ const Footer = () => {
 
       {/* Main Footer Navigation */}
       <div className="bg-[#FBFAFE] py-16 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12 grid grid-cols-1 sm:grid-cols-6 gap-x-4 gap-y-10">
+        <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] 4xl:max-w-[80%] mx-auto px-4 xl:px-8 2xl:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-10">
           {/* Quick Links */}
           <div className="text-center xl:text-left min-w-0">
-            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Quick Links</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
               <li><Link to="/" className="text-gray-400 hover:text-black"
               onClick={handleNavClick}
               >
@@ -117,8 +117,8 @@ const Footer = () => {
 
           {/* Our Features */}
           <div className="text-center xl:text-left min-w-0">
-            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Our Features</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Our Features</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
               <li className="text-gray-400 hover:text-black">Mind Sessions for Inner Calm</li>
               <li className="text-gray-400 hover:text-black">Healing Music & Frequencies</li>
               <li className="text-gray-400 hover:text-black">AI-Powered Mind Coach</li>
@@ -128,8 +128,8 @@ const Footer = () => {
 
           {/* Experiences */}
           <div className="text-center xl:text-left min-w-0">
-            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Experiences</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Experiences</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
               <li className="text-gray-400 hover:text-black">Deep VR Guided Meditation</li>
               <li className="text-gray-400 hover:text-black">Calm Your Heightened Anxiety</li>
               <li className="text-gray-400 hover:text-black">Rest and Relax Together</li>
@@ -138,8 +138,8 @@ const Footer = () => {
 
           {/* Why Choose Us */}
           <div className="text-center xl:text-left min-w-0">
-            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Why Choose Us</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Why Choose Us</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
               <li className="text-gray-400 hover:text-black">Calm Your Inner World</li>
               <li className="text-gray-400 hover:text-black">Strengthen from the Inside Out</li>
               <li className="text-gray-400 hover:text-black">Ease Into Restful Sleep</li>
@@ -150,8 +150,8 @@ const Footer = () => {
 
           {/* Help */}
           <div className="text-center xl:text-left min-w-0">
-            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Help</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Help</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
               <li><a href="#" className="text-gray-400 hover:text-black">FAQs</a></li>
               <li><a href="#" className="text-gray-400 hover:text-black">Terms of Use</a></li>
               <li><a href="#" className="text-gray-400 hover:text-black">Privacy Policy</a></li>
@@ -161,8 +161,8 @@ const Footer = () => {
 
           {/* Connect With Us */}
           <div className="text-center xl:text-left min-w-0">
-            <h3 className="font-bold mb-4 text-sm uppercase tracking-wider">Connect With Us</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Connect With Us</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
               <li><a href="https://www.facebook.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">Facebook Page</a></li>
               <li><a href="https://www.instagram.com/mindplayerapp/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">Instagram Gallery</a></li>
               <li><a href="https://x.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black">X Updates</a></li>
@@ -175,34 +175,34 @@ const Footer = () => {
 
       {/* MindPlayer Logo Before Divider */}
       <div className="bg-[#FBFAFE] pt-2 pb-6 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12">
-          <h2 className="text-xl font-bold">Mind Player</h2>
+        <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] 4xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl font-bold">Mind Player</h2>
         </div>
       </div>
       
       {/* Footer Bottom - Simple Version */}
       <div className="bg-[#FBFAFE] py-6 px-4 text-[#0D0A09]">
-        <div className="max-w-7xl xl:max-w-6xl 2xl:max-w-5xl mx-auto px-4 xl:px-8 2xl:px-12">
+        <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] 4xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-500 mb-4 md:mb-0">
+            <p className="text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl text-gray-500 mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Mind Player. All rights reserved.
             </p>
             
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 2xl:space-x-6 3xl:space-x-8 4xl:space-x-10">
               <a href="https://www.facebook.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="Facebook">
-                <Facebook size={16} />
+                <Facebook size={16} className="2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8" />
               </a>
               <a href="https://www.instagram.com/mindplayerapp/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="Instagram">
-                <Instagram size={16} />
+                <Instagram size={16} className="2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8" />
               </a>
               <a href="https://x.com/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="X (Twitter)">
-                <X size={16} />
+                <X size={16} className="2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8" />
               </a>
               <a href="http://www.linkedin.com/company/mindplayerapp" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="LinkedIn">
-                <Linkedin size={16} />
+                <Linkedin size={16} className="2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8" />
               </a>
               <a href="https://www.tiktok.com/@mindplayerapp?_t=ZG-8z4AFuVLHSC&_r=1" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black" aria-label="TikTok">
-                <SiTiktok size={16} />
+                <SiTiktok size={16} className="2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8" />
               </a>
             </div>
           </div>

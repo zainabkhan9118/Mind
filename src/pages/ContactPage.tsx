@@ -91,25 +91,25 @@ const ContactPage = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-[#fcfaff] px-2 py-12"
+      className="min-h-screen flex flex-col items-center justify-start bg-[#fcfaff] px-2 py-12 lg:pt-6 xl:pt-4 2xl:pt-2"
       style={{ minHeight: '100vh', width: '100%' }}
     >
       <div
-        className="w-full max-w-4xl mx-auto flex flex-col items-center"
+        className="w-full max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto flex flex-col items-center mt-0 lg:mt-8 xl:mt-6 2xl:mt-4"
         style={{ gap: 0, opacity: 1 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-3" style={{ color: '#181028' }}>Contact Us</h1>
-        <p className="text-center text-base text-[#222] opacity-80 mb-8">Have a question, feedback, or partnership idea? We’d love to to hear from you.</p>
+        <h1 className="text-4xl md:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold text-center mb-3 2xl:mb-4 3xl:mb-5 mt-4 lg:mt-2" style={{ color: '#181028' }}>Contact Us</h1>
+        <p className="text-center text-base md:text-lg 2xl:text-xl 3xl:text-2xl text-[#222] opacity-80 mb-8 2xl:mb-8 3xl:mb-10">Have a question, feedback, or partnership idea? We'd love to to hear from you.</p>
         <form
-          className="flex flex-col items-center w-full gap-6"
+          className="flex flex-col items-center w-full gap-6 2xl:gap-8 3xl:gap-10"
           onSubmit={handleSubmit}
           noValidate
         >
           <div
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 2xl:gap-8 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl"
           >
             <div className="flex flex-col gap-2 w-full">
-              <Label htmlFor="firstName" className="block text-sm font-medium text-[#222]">First name (required)</Label>
+              <Label htmlFor="firstName" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">First name (required)</Label>
               <Input
                 id="firstName"
                 name="firstName"
@@ -118,12 +118,12 @@ const ContactPage = () => {
                 autoComplete="given-name"
                 placeholder=""
                 aria-invalid={!!errors.firstName}
-                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
+                className="w-full h-12 2xl:h-14 3xl:h-16 rounded-xl bg-[#0D0A090D]"
               />
-              {errors.firstName && <p className="text-xs text-red-500">{errors.firstName}</p>}
+              {errors.firstName && <p className="text-xs 2xl:text-sm text-red-500">{errors.firstName}</p>}
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <Label htmlFor="lastName" className="block text-sm font-medium text-[#222]">Last name (optional)</Label>
+              <Label htmlFor="lastName" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">Last name (optional)</Label>
               <Input
                 id="lastName"
                 name="lastName"
@@ -131,11 +131,11 @@ const ContactPage = () => {
                 onChange={handleChange}
                 autoComplete="family-name"
                 placeholder=""
-                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
+                className="w-full h-12 2xl:h-14 3xl:h-16 rounded-xl bg-[#0D0A090D]"
               />
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <Label htmlFor="email" className="block text-sm font-medium text-[#222]">Email (required)</Label>
+              <Label htmlFor="email" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">Email (required)</Label>
               <Input
                 id="email"
                 name="email"
@@ -145,12 +145,12 @@ const ContactPage = () => {
                 autoComplete="email"
                 placeholder=""
                 aria-invalid={!!errors.email}
-                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
+                className="w-full h-12 2xl:h-14 3xl:h-16 rounded-xl bg-[#0D0A090D]"
               />
-              {errors.email && <p className="text-xs text-red-500">{errors.email}</p>}
+              {errors.email && <p className="text-xs 2xl:text-sm text-red-500">{errors.email}</p>}
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <Label htmlFor="phone" className="block text-sm font-medium text-[#222]">Phone number (optional)</Label>
+              <Label htmlFor="phone" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">Phone number (optional)</Label>
               <Input
                 id="phone"
                 name="phone"
@@ -159,18 +159,18 @@ const ContactPage = () => {
                 onChange={handleChange}
                 autoComplete="tel"
                 placeholder=""
-                className="w-full h-12 rounded-xl bg-[#0D0A090D]"
+                className="w-full h-12 2xl:h-14 3xl:h-16 rounded-xl bg-[#0D0A090D]"
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-full max-w-2xl">
-            <Label htmlFor="topic">Choose a topic (required)</Label>
+          <div className="flex flex-col gap-2 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
+            <Label htmlFor="topic" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">Choose a topic (required)</Label>
             <select
               id="topic"
               name="topic"
               value={form.topic}
               onChange={handleChange}
-              className="mt-1 w-full border border-[#e5e5e5] px-3 py-2 text-base text-[#222] focus:border-[#DB91EF] focus:ring-2 focus:ring-[#DB91EF]/30 outline-none rounded-xl bg-[#0D0A090D] h-12"
+              className="mt-1 w-full border border-[#e5e5e5] px-3 py-2 text-base 2xl:text-lg 3xl:text-xl text-[#222] focus:border-[#DB91EF] focus:ring-2 focus:ring-[#DB91EF]/30 outline-none rounded-xl bg-[#0D0A090D] h-12 2xl:h-14 3xl:h-16"
               aria-invalid={!!errors.topic}
             >
               <option value="">Select one...</option>
@@ -178,10 +178,10 @@ const ContactPage = () => {
                 <option key={t} value={t}>{t}</option>
               ))}
             </select>
-            {errors.topic && <p className="text-xs text-red-500 mt-1">{errors.topic}</p>}
+            {errors.topic && <p className="text-xs 2xl:text-sm text-red-500 mt-1">{errors.topic}</p>}
           </div>
-          <div className="flex flex-col gap-2 w-full max-w-2xl">
-            <Label htmlFor="attachment">Attachment (optional)</Label>
+          <div className="flex flex-col gap-2 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
+            <Label htmlFor="attachment" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">Attachment (optional)</Label>
             <div className="relative w-full">
               <input
                 id="attachment"
@@ -192,7 +192,7 @@ const ContactPage = () => {
               />
               <label
                 htmlFor="attachment"
-                className="flex items-center w-full h-24 bg-[#0D0A090D] rounded-xl px-5 cursor-pointer border-none font-normal text-lg text-[#888] relative"
+                className="flex items-center w-full h-24 2xl:h-28 3xl:h-32 bg-[#0D0A090D] rounded-xl px-5 cursor-pointer border-none font-normal text-lg 2xl:text-xl 3xl:text-2xl text-[#888] relative"
               >
                 <span className="flex-1 text-left text-[#888]">
                   {form.attachment ? form.attachment.name : 'Upload your file here...'}
@@ -204,8 +204,8 @@ const ContactPage = () => {
               </label>
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-full max-w-2xl">
-            <Label htmlFor="message">Message (required)</Label>
+          <div className="flex flex-col gap-2 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
+            <Label htmlFor="message" className="block text-sm 2xl:text-base 3xl:text-lg font-medium text-[#222]">Message (required)</Label>
             <Textarea
               id="message"
               name="message"
@@ -214,27 +214,27 @@ const ContactPage = () => {
               rows={5}
               placeholder="Type your message..."
               aria-invalid={!!errors.message}
-              className="mt-1 w-full rounded-xl bg-[#0D0A090D] p-3"
+              className="mt-1 w-full rounded-xl bg-[#0D0A090D] p-3 text-base 2xl:text-lg 3xl:text-xl"
               style={{ minHeight: 120 }}
             />
-            {errors.message && <p className="text-xs text-red-500 mt-1">{errors.message}</p>}
+            {errors.message && <p className="text-xs 2xl:text-sm text-red-500 mt-1">{errors.message}</p>}
           </div>
-          <div className="flex items-center gap-2 w-full max-w-2xl">
+          <div className="flex items-center gap-2 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
             <input
               id="agree"
               name="agree"
               type="checkbox"
               checked={form.agree}
               onChange={handleChange}
-              className="accent-[#DB91EF] w-4 h-4 rounded border border-[#e5e5e5]"
+              className="accent-[#DB91EF] w-4 h-4 2xl:w-5 2xl:h-5 3xl:w-6 3xl:h-6 rounded border border-[#e5e5e5]"
             />
-            <Label htmlFor="agree" className="text-xs text-[#222] opacity-80">I agree to the processing of my data for the purpose of this request.</Label>
+            <Label htmlFor="agree" className="text-xs 2xl:text-sm 3xl:text-base text-[#222] opacity-80">I agree to the processing of my data for the purpose of this request.</Label>
           </div>
-          {errors.agree && <p className="text-xs text-red-500 mt-1 w-full max-w-2xl">{errors.agree}</p>}
-          <div className="flex justify-center pt-2 w-full max-w-2xl">
+          {errors.agree && <p className="text-xs 2xl:text-sm text-red-500 mt-1 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">{errors.agree}</p>}
+          <div className="flex justify-center pt-2 2xl:pt-4 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
             <button
               type="submit"
-              className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 rounded-full font-semibold text-base shadow-md transition-colors duration-200 w-full sm:w-auto"
+              className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5 rounded-full font-semibold text-base 2xl:text-lg 3xl:text-xl shadow-md transition-colors duration-200 w-full sm:w-auto"
               disabled={submitting}
             >
               {submitting ? "Sending..." : "Send Message"}
@@ -246,11 +246,11 @@ const ContactPage = () => {
       {/* Success Modal */}
       {success && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="bg-white rounded-2xl shadow-xl px-8 py-10 max-w-md w-full text-center">
-            <h2 className="text-xl font-bold mb-2 text-[#181028]">Thanks for Reaching Out!</h2>
-            <p className="mb-6 text-[#222] opacity-90">Your query has been submitted. We’ll get back to you within 2 business days.</p>
+          <div className="bg-white rounded-2xl shadow-xl px-8 py-10 max-w-md 2xl:max-w-lg 3xl:max-w-xl w-full text-center">
+            <h2 className="text-xl 2xl:text-2xl 3xl:text-3xl font-bold mb-2 text-[#181028]">Thanks for Reaching Out!</h2>
+            <p className="mb-6 text-[#222] opacity-90 text-base 2xl:text-lg 3xl:text-xl">Your query has been submitted. We'll get back to you within 2 business days.</p>
             <button
-              className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 rounded-full font-semibold text-base shadow-md transition-colors duration-200"
+              className="bg-[#DCD3F7] hover:bg-[#DCD3F7] text-black px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5 rounded-full font-semibold text-base 2xl:text-lg 3xl:text-xl shadow-md transition-colors duration-200"
               onClick={() => setSuccess(false)}
             >
               Go Back

@@ -163,7 +163,8 @@ const Features = () => {
 
   return (
   <div className="flex flex-col items-center justify-center min-h-[800px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-screen bg-[#e5e5e5] py-10 sm:py-16 md:py-20">
-      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl 3xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 py-12 md:py-16 lg:py-20">
+      {/* Main Container */}
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 3xl:px-32 py-12 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -176,24 +177,24 @@ const Features = () => {
               className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
             >
               {/* Left Content */}
-              <div className="h-[400px] md:h-[500px] lg:h-[640px] w-full md:max-w-[500px] lg:max-w-[600px] xl:max-w-[550px] 2xl:max-w-[500px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-between transition-all duration-700">
+              <div className="h-[400px] md:h-[500px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full md:max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-between transition-all duration-700">
                 {current.subtitle && (
                   <motion.div 
                     variants={itemVariants}
-                    className="text-[14px] sm:text-[16px] font-semibold text-[#0D0A09] mb-1"
+                    className="text-[14px] sm:text-[16px] lg:text-[18px] xl:text-[20px] font-semibold text-[#0D0A09] mb-1"
                   >
                     {current.subtitle}
                   </motion.div>
                 )}
                 <motion.h2 
                   variants={itemVariants}
-                  className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0D0A09] leading-[1.1] mb-2"
+                  className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#0D0A09] leading-[1.1] mb-2"
                 >
                   {current.title}
                 </motion.h2>
                 <motion.p 
                   variants={itemVariants}
-                  className="text-base sm:text-lg text-gray-600 max-w-lg leading-snug min-h-[90px]"
+                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 max-w-3xl leading-snug min-h-[90px]"
                 >
                   {current.description}
                 </motion.p>
@@ -221,7 +222,6 @@ const Features = () => {
                 >
                   <button className="bg-[#0D0A090D] border border-gray-300 text-[#0D0A09] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-gray-200 transition-colors duration-200"
                     onClick={() => {
-                      // Handle button click
                       navigate('/features')
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
@@ -230,15 +230,16 @@ const Features = () => {
                   </button>
                 </motion.div>
               </div>
+
               {/* Right Content - Carousel Image */}
               <motion.div 
                 variants={itemVariants}
-                className="h-[500px] sm:h-[450px] md:h-[550px] lg:h-[640px] w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[600px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
+                className="h-[500px] sm:h-[450px] md:h-[550px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] 2xl:max-w-[1000px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
               >
                 <img
                   src={current.image}
                   alt={current.alt}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-top"
                   loading="lazy"
                 />
               </motion.div>
@@ -246,15 +247,16 @@ const Features = () => {
           </AnimatePresence>
         </div>
       </div>
+
       {/* Navigation Dots */}
-  <div className="min-h-[40px] flex justify-center items-center gap-3 mt-4 mb-10">
+      <div className="min-h-[40px] flex justify-center items-center gap-3 mt-4 mb-10">
         {carouselData.map((_, i) => (
           <button
             key={i}
             onClick={() => {
               setDirection(i > index ? 1 : -1);
               setIndex(i);
-              setTimeout(restartTimer, 0); // Reset timer after click
+              setTimeout(restartTimer, 0);
             }}
             className={`w-3 h-3 rounded-full transition-all duration-300 border-2 focus:outline-none ${
               i === index
@@ -266,7 +268,8 @@ const Features = () => {
         ))}
       </div>
     </div>
-  );
+);
+
 };
 
 export default Features;

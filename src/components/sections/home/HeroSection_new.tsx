@@ -28,8 +28,9 @@ const HeroSection = () => {
           <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl max-w-xs sm:max-w-sm md:max-w-md xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl mb-0">
             Discover the power of immersive mental wellness.
           </p>
+          </div>
         </div>
-      </div>
+      
     </div>
   );
 };
