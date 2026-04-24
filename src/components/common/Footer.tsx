@@ -152,10 +152,10 @@ const Footer = () => {
           <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider">Help</h3>
             <ul className="space-y-2 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl">
-              <li><a href="#" className="text-gray-400 hover:text-black">FAQs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Terms of Use</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-black">Cookie Policy</a></li>
+              <li><Link to="/faqs" className="text-gray-400 hover:text-black" onClick={handleNavClick}>FAQs</Link></li>
+              <li><Link to="/terms" className="text-gray-400 hover:text-black" onClick={handleNavClick}>Terms of Use</Link></li>
+              <li><Link to="/privacy" className="text-gray-400 hover:text-black" onClick={handleNavClick}>Privacy Policy</Link></li>
+              <li><Link to="/cookies" className="text-gray-400 hover:text-black" onClick={handleNavClick}>Cookie Policy</Link></li>
             </ul>
           </div>
 

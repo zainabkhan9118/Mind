@@ -7,6 +7,11 @@ import ExperiencePage from '@/pages/ExperiencePage'
 import Pricing from '@/pages/Pricing'
 import ContactPage from '@/pages/ContactPage'
 import LearnMore from '@/pages/LearnMore'
+import FAQsPage from '@/pages/FAQsPage'
+import TermsPage from '@/pages/TermsPage'
+import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage'
+import CookiesPolicyPage from '@/pages/CookiesPolicyPage'
+
 function Router() {
   return (
     <Layout>
@@ -18,7 +23,10 @@ function Router() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/learn-more" element={<LearnMore />} />
-
+        <Route path="/faqs" element={<FAQsPage />} />
+        <Route path="/terms" element={<TermsPage />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+        <Route path="/cookies" element={<CookiesPolicyPage />} />
       </Routes>
     </Layout>
   )
