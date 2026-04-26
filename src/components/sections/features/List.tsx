@@ -17,7 +17,7 @@ const List = () => {
 
 
         {/*1st Card Section */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center glass-card rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
         <div
             className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[762px] 2xl:h-[800px] 3xl:h-[900px] 4xl:h-[1100px] overflow-hidden shadow-none border-none bg-transparent"
@@ -34,16 +34,16 @@ const List = () => {
           <div
             className="w-full lg:w-1/2 h-auto lg:h-[640px] 2xl:h-[700px] 3xl:h-[800px] 4xl:h-[1000px] p-5 sm:p-6 lg:p-8 2xl:p-10 3xl:p-12 4xl:p-14 shadow-none border-none flex flex-col"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-[#0D0A09] mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-white mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
               Mind Sessions for<br className="hidden sm:block" />
               <span className="sm:hidden"> </span>Inner Calm
             </h2>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-[#0D0A09] font-medium mb-2 sm:mb-4 2xl:mb-6 4xl:mb-8">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-white font-medium mb-2 sm:mb-4 2xl:mb-6 4xl:mb-8">
               Guided practices for daily peace and self-growth.
             </p>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-gray-600 mb-4 sm:mb-6 lg:mb-8 2xl:mb-10 4xl:mb-12">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-gray-400 mb-4 sm:mb-6 lg:mb-8 2xl:mb-10 4xl:mb-12">
               Enter beautifully designed mental spaces to help you unwind, reset, and
               grow. These sessions are guided by science-backed methods and
               created to support emotional balance and cognitive health — all from the
@@ -52,52 +52,52 @@ const List = () => {
             
             <div className="space-y-3 sm:space-y-4 lg:space-y-6 2xl:space-y-8 3xl:space-y-10">
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Meditations</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Find stillness and clarity with guided mindfulness practices.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Meditations</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Find stillness and clarity with guided mindfulness practices.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Hypnosis</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Dive into deeper states of awareness and relaxation.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Hypnosis</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Dive into deeper states of awareness and relaxation.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 mr-2 sm:mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 mr-2 sm:mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base">Coaching</p>
-                  <p className="text-gray-600 text-xs sm:text-sm">Unlock motivation and insight with voice-led mental coaching.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base">Coaching</p>
+                  <p className="text-gray-400 text-xs sm:text-sm">Unlock motivation and insight with voice-led mental coaching.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 mr-2 sm:mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 mr-2 sm:mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base">Breathwork</p>
-                  <p className="text-gray-600 text-xs sm:text-sm">Breathe deeply, release stress, and regulate your nervous system.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base">Breathwork</p>
+                  <p className="text-gray-400 text-xs sm:text-sm">Breathe deeply, release stress, and regulate your nervous system.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 mr-2 sm:mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 mr-2 sm:mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base">Sleep Stories</p>
-                  <p className="text-gray-600 text-xs sm:text-sm">Drift into restful sleep with calming, voice-guided narratives.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base">Sleep Stories</p>
+                  <p className="text-gray-400 text-xs sm:text-sm">Drift into restful sleep with calming, voice-guided narratives.</p>
                 </div>
               </div>
             </div>
@@ -106,63 +106,63 @@ const List = () => {
         </div>
 
         {/* 2nd Card Section */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center glass-card rounded-xl sm:rounded-2xl lg:rounded-3xl">
 
           {/* Left Content */}
           <div
             className="w-full lg:w-1/2 h-auto lg:h-[640px] 2xl:h-[700px] 3xl:h-[800px] 4xl:h-[1000px] p-5 sm:p-6 lg:p-8 2xl:p-10 3xl:p-12 4xl:p-14 shadow-none border-none flex flex-col"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-[#0D0A09] mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-white mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
               Healing Music &<br className="hidden sm:block" />
               <span className="sm:hidden"> </span>Frequencies
             </h2>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-[#0D0A09] font-medium mb-2 sm:mb-4 2xl:mb-6 4xl:mb-8">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-white font-medium mb-2 sm:mb-4 2xl:mb-6 4xl:mb-8">
               Sound therapies that tune your mind and body.
             </p>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-gray-600 mb-4 sm:mb-6 lg:mb-8 2xl:mb-10 4xl:mb-12">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-gray-400 mb-4 sm:mb-6 lg:mb-8 2xl:mb-10 4xl:mb-12">
               Our audio library is curated to shift brainwaves, enhance focus, and soothe your emotional state using scientifically validated sound frequencies. Pair them with visuals or use them standalone as a mental tune-up.
             </p>
             
             <div className="space-y-3 sm:space-y-4 lg:space-y-6 2xl:space-y-8 3xl:space-y-10">
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Binaural Beats</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Synchronize brainwaves for focus, sleep, or relaxation.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Binaural Beats</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Synchronize brainwaves for focus, sleep, or relaxation.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Solfeggio Tones</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Ancient frequencies believed to promote healing and balance.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Solfeggio Tones</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Ancient frequencies believed to promote healing and balance.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">EMDR Audio</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Rhythmic bilateral stimulation to support emotional processing.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">EMDR Audio</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Rhythmic bilateral stimulation to support emotional processing.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Soundscapes</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Natural and ambient environments that create calming immersion.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Soundscapes</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Natural and ambient environments that create calming immersion.</p>
                 </div>
               </div>
               
@@ -184,7 +184,7 @@ const List = () => {
 
         {/*3rd Card Section */}
 
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center glass-card rounded-xl sm:rounded-2xl lg:rounded-3xl">
           <div
             className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[762px] 2xl:h-[800px] 3xl:h-[900px] 4xl:h-[1100px] overflow-hidden shadow-none border-none bg-transparent"
           >
@@ -200,48 +200,48 @@ const List = () => {
           <div
             className="w-full lg:w-1/2 h-auto lg:h-[640px] 2xl:h-[700px] 3xl:h-[800px] 4xl:h-[1000px] p-5 sm:p-6 lg:p-8 2xl:p-10 3xl:p-12 4xl:p-14 shadow-none border-none flex flex-col"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-[#0D0A09] mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-white mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
               AI-Powered
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>Mind Coach
             </h2>
 
-            <p className="text-sm sm:text-base text-[#0D0A09] font-medium mb-2 sm:mb-4">
+            <p className="text-sm sm:text-base text-white font-medium mb-2 sm:mb-4">
               Smart guidance tailored to your mind’s needs.
             </p>
 
-            <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 lg:mb-8">
+            <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6 lg:mb-8">
               Your intelligent mental wellness companion learns from your behavior, preferences, and goals — offering personalized support every day. It helps you stay on track, build habits, and unlock deeper self-awareness through gentle nudges and custom suggestions.
             </p>
             
             <div className="space-y-3 sm:space-y-4 lg:space-y-6 2xl:space-y-8 3xl:space-y-10">
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Personalized Suggestions</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Daily session and content recommendations based on your progress.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Personalized Suggestions</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Daily session and content recommendations based on your progress.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Daily Support</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Thoughtful prompts, reminders, and mood check-ins to keep you balanced.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Daily Support</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Thoughtful prompts, reminders, and mood check-ins to keep you balanced.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Guided Journeys</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Multi-step experiences designed to guide long-term growth and mental transformation.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Guided Journeys</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Multi-step experiences designed to guide long-term growth and mental transformation.</p>
                 </div>
               </div>
             </div>
@@ -253,52 +253,52 @@ const List = () => {
          {/* 4th Card Section */}
       
 
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center bg-[#e5e5e5] rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-10 3xl:gap-12 justify-center items-center glass-card rounded-xl sm:rounded-2xl lg:rounded-3xl">
           {/* Left Content */}
           <div
             className="w-full lg:w-1/2 h-auto lg:h-[640px] 2xl:h-[700px] 3xl:h-[800px] 4xl:h-[1000px] p-5 sm:p-6 lg:p-8 2xl:p-10 3xl:p-12 4xl:p-14 shadow-none border-none flex flex-col"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-[#0D0A09] mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-white mb-2 sm:mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
               Wellness Community<br className="hidden sm:block" />
               <span className="sm:hidden"> </span>& Shared Spaces
             </h2>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-[#0D0A09] font-medium mb-2 sm:mb-4 2xl:mb-6 4xl:mb-8">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-white font-medium mb-2 sm:mb-4 2xl:mb-6 4xl:mb-8">
               Healing happens better together.
             </p>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-gray-600 mb-4 sm:mb-6 lg:mb-8 2xl:mb-10 4xl:mb-12">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-gray-400 mb-4 sm:mb-6 lg:mb-8 2xl:mb-10 4xl:mb-12">
               Connect with others in a safe, supportive space where you can meditate, learn, and grow as a group. Whether you're joining a public session or creating a private one with friends or peers, Mind Player nurtures meaningful interaction through immersive connection.
             </p>
             
             <div className="space-y-3 sm:space-y-4 lg:space-y-6 2xl:space-y-8 3xl:space-y-10">
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Create & Join Group Sessions</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Host or join live experiences with others around the world.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Create & Join Group Sessions</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Host or join live experiences with others around the world.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Private Spaces</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Build your own calming space to share with selected users or teams.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Private Spaces</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Build your own calming space to share with selected users or teams.</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-600 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 text-gray-400 mr-2 sm:mr-3 2xl:mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <div>
-                  <p className="font-medium text-gray-800 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Peer Support</p>
-                  <p className="text-gray-600 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Engage in open, mindful discussions with like-minded individuals.</p>
+                  <p className="font-medium text-gray-300 text-sm sm:text-base 2xl:text-lg 3xl:text-xl">Peer Support</p>
+                  <p className="text-gray-400 text-xs sm:text-sm 2xl:text-base 3xl:text-lg">Engage in open, mindful discussions with like-minded individuals.</p>
                 </div>
               </div>
             </div>

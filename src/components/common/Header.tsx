@@ -17,12 +17,12 @@ const Header = () => {
   }
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <header className="bg-black/60 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50">
       <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2" onClick={handleNavClick}>
-            <span className="text-2xl font-bold text-gray-900">Mind Player</span>
+            <span className="text-2xl font-bold text-white">Mind Player</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -31,8 +31,8 @@ const Header = () => {
               to="/" 
               className={`text-sm transition-colors duration-200 ${
                 isActive('/') 
-                  ? 'text-black font-bold' 
-                  : 'text-gray-700 font-medium hover:text-gray-900'
+                  ? 'text-white font-bold' 
+                  : 'text-gray-400 font-medium hover:text-white'
               }`}
               onClick={handleNavClick}
             >
@@ -42,8 +42,8 @@ const Header = () => {
               to="/about" 
               className={`text-sm transition-colors duration-200 ${
                 isActive('/about') 
-                  ? 'text-black font-bold' 
-                  : 'text-gray-700 font-medium hover:text-gray-900'
+                  ? 'text-white font-bold' 
+                  : 'text-gray-400 font-medium hover:text-white'
               }`}
               onClick={handleNavClick}
             >
@@ -53,8 +53,8 @@ const Header = () => {
               to="/features" 
               className={`text-sm transition-colors duration-200 ${
                 isActive('/features') 
-                  ? 'text-black font-bold' 
-                  : 'text-gray-700 font-medium hover:text-gray-900'
+                  ? 'text-white font-bold' 
+                  : 'text-gray-400 font-medium hover:text-white'
               }`}
               onClick={handleNavClick}
             >
@@ -64,8 +64,8 @@ const Header = () => {
               to="/experiences" 
               className={`text-sm transition-colors duration-200 ${
                 isActive('/experiences') 
-                  ? 'text-black font-bold' 
-                  : 'text-gray-700 font-medium hover:text-gray-900'
+                  ? 'text-white font-bold' 
+                  : 'text-gray-400 font-medium hover:text-white'
               }`}
               onClick={handleNavClick}
             >
@@ -75,8 +75,8 @@ const Header = () => {
               to="/pricing" 
               className={`text-sm transition-colors duration-200 ${
                 isActive('/pricing') 
-                  ? 'text-black font-bold' 
-                  : 'text-gray-700 font-medium hover:text-gray-900'
+                  ? 'text-white font-bold' 
+                  : 'text-gray-400 font-medium hover:text-white'
               }`}
               onClick={handleNavClick}
             >
@@ -86,8 +86,8 @@ const Header = () => {
               to="/contact" 
               className={`text-sm transition-colors duration-200 ${
                 isActive('/contact') 
-                  ? 'text-black font-bold' 
-                  : 'text-gray-700 font-medium hover:text-gray-900'
+                  ? 'text-white font-bold' 
+                  : 'text-gray-400 font-medium hover:text-white'
               }`}
               onClick={handleNavClick}
             >
@@ -99,7 +99,7 @@ const Header = () => {
           <div className="hidden md:flex items-center">
             <Link 
               to="/contact" 
-              className="bg-[#DCD3F7] text-black px-4 py-2 rounded-4xl text-sm font-medium hover:bg-[#ccc0f2] transition-colors duration-200"
+              className="bg-mind-violet text-white px-4 py-2 rounded-4xl text-sm font-medium hover:bg-mind-violet-light transition-colors duration-200"
               onClick={handleNavClick}
             >
               Try For Free
@@ -108,7 +108,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,14 +123,14 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-200">
+          <nav className="md:hidden py-4 border-t border-white/10">
             <div className="space-y-3">
               <Link 
                 to="/" 
                 className={`block px-3 py-2 text-sm transition-colors ${
                   isActive('/') 
-                    ? 'text-black font-bold bg-gray-50' 
-                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-white font-bold bg-white/5' 
+                    : 'text-gray-400 font-medium hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setIsMobileMenuOpen(false);
@@ -144,8 +144,8 @@ const Header = () => {
                 to="/about" 
                 className={`block px-3 py-2 text-sm transition-colors ${
                   isActive('/about') 
-                    ? 'text-black font-bold bg-gray-50' 
-                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-white font-bold bg-white/5' 
+                    : 'text-gray-400 font-medium hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setIsMobileMenuOpen(false);
@@ -158,8 +158,8 @@ const Header = () => {
                 to="/features" 
                 className={`block px-3 py-2 text-sm transition-colors ${
                   isActive('/features') 
-                    ? 'text-black font-bold bg-gray-50' 
-                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-white font-bold bg-white/5' 
+                    : 'text-gray-400 font-medium hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setIsMobileMenuOpen(false);
@@ -172,8 +172,8 @@ const Header = () => {
                 to="/experiences" 
                 className={`block px-3 py-2 text-sm transition-colors ${
                   isActive('/experiences') 
-                    ? 'text-black font-bold bg-gray-50' 
-                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-white font-bold bg-white/5' 
+                    : 'text-gray-400 font-medium hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setIsMobileMenuOpen(false);
@@ -186,8 +186,8 @@ const Header = () => {
                 to="/pricing" 
                 className={`block px-3 py-2 text-sm transition-colors ${
                   isActive('/pricing') 
-                    ? 'text-black font-bold bg-gray-50' 
-                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-white font-bold bg-white/5' 
+                    : 'text-gray-400 font-medium hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setIsMobileMenuOpen(false);
@@ -201,8 +201,8 @@ const Header = () => {
                 to="/contact" 
                 className={`block px-3 py-2 text-sm transition-colors ${
                   isActive('/contact') 
-                    ? 'text-black font-bold bg-gray-50' 
-                    : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-white font-bold bg-white/5' 
+                    : 'text-gray-400 font-medium hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setIsMobileMenuOpen(false);
@@ -214,7 +214,7 @@ const Header = () => {
                 
               <Link 
                 to="/contact" 
-                className="block mx-3 mt-4 bg-[#DCD3F7] text-black px-4 py-2 rounded-md text-sm font-medium text-center hover:bg-[#ccc0f2] transition-colors"
+                className="block mx-3 mt-4 bg-mind-violet text-white px-4 py-2 rounded-md text-sm font-medium text-center hover:bg-mind-violet-light transition-colors"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   handleNavClick();

@@ -21,10 +21,10 @@ const sections = [
 ];
 
 const renderList = (items: string[]) => (
-  <ul className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-600 space-y-2">
+  <ul className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 space-y-2">
     {items.map((item, i) => (
       <li key={i} className="flex items-center gap-2">
-        <svg className="w-4 h-4 2xl:w-5 2xl:h-5 text-gray-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 2xl:w-5 2xl:h-5 text-mind-violet flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
         </svg>
         <span>{item}</span>
@@ -35,28 +35,28 @@ const renderList = (items: string[]) => (
 
 const TermsPage = () => {
   return (
-    <section className="min-h-screen bg-white px-4 sm:px-6 py-16 sm:py-24 md:py-32">
+    <section className="min-h-screen px-4 sm:px-6 py-16 sm:py-24 md:py-32">
       <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 space-y-2 sm:space-y-4">
-          <p className="text-base sm:text-lg 2xl:text-xl 3xl:text-2xl text-[#0D0A09] font-semibold">Legal</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold text-[#0D0A09] leading-[1.1]">
+          <p className="text-base sm:text-lg 2xl:text-xl 3xl:text-2xl text-mind-violet font-semibold">Legal</p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold text-white leading-[1.1]">
             Terms &amp; Conditions
           </h1>
-          <p className="max-w-xl sm:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl mx-auto text-base sm:text-lg 2xl:text-xl 3xl:text-2xl text-gray-600">
+          <p className="max-w-xl sm:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl mx-auto text-base sm:text-lg 2xl:text-xl 3xl:text-2xl text-gray-400">
             Please read these terms carefully before using the Mind Player platform.
           </p>
         </div>
 
         <div className="max-w-3xl 2xl:max-w-4xl 3xl:max-w-5xl mx-auto flex flex-col gap-5">
           {sections.map((s, i) => (
-            <div key={i} className="bg-[#F8F6FD] border border-[#ece7f6] rounded-2xl sm:rounded-3xl px-6 sm:px-8 py-6 sm:py-8">
-              <h2 className="font-bold text-lg sm:text-xl 2xl:text-2xl 3xl:text-3xl text-[#0D0A09] mb-3">{s.title}</h2>
-              {s.content && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-600 leading-relaxed mb-3">{s.content}</p>}
-              {'listLabel' in s && s.listLabel && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-[#0D0A09] font-medium mb-2">{s.listLabel}</p>}
+            <div key={i} className="glass-card rounded-2xl sm:rounded-3xl px-6 sm:px-8 py-6 sm:py-8">
+              <h2 className="font-bold text-lg sm:text-xl 2xl:text-2xl 3xl:text-3xl text-white mb-3">{s.title}</h2>
+              {s.content && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 leading-relaxed mb-3">{s.content}</p>}
+              {'listLabel' in s && s.listLabel && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-white/80 font-medium mb-2">{s.listLabel}</p>}
               {s.list && <div className="mb-3">{renderList(s.list)}</div>}
-              {'listLabel2' in s && (s as any).listLabel2 && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-[#0D0A09] font-medium mb-2 mt-4">{(s as any).listLabel2}</p>}
+              {'listLabel2' in s && (s as any).listLabel2 && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-white/80 font-medium mb-2 mt-4">{(s as any).listLabel2}</p>}
               {'list2' in s && (s as any).list2 && renderList((s as any).list2)}
-              {'footer' in s && s.footer && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-600 leading-relaxed mt-3 font-medium">{s.footer}</p>}
+              {'footer' in s && s.footer && <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 leading-relaxed mt-3 font-medium">{s.footer}</p>}
             </div>
           ))}
         </div>

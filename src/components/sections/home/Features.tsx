@@ -162,7 +162,7 @@ const Features = () => {
   };
 
   return (
-  <div className="flex flex-col items-center justify-center min-h-[800px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-screen bg-[#e5e5e5] py-10 sm:py-16 md:py-20">
+  <div className="flex flex-col items-center justify-center min-h-[800px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-screen bg-mind-navy/40 py-10 sm:py-16 md:py-20">
       {/* Main Container */}
       <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 3xl:px-32 py-12 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
@@ -181,20 +181,20 @@ const Features = () => {
                 {current.subtitle && (
                   <motion.div 
                     variants={itemVariants}
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] xl:text-[20px] font-semibold text-[#0D0A09] mb-1"
+                    className="text-[14px] sm:text-[16px] lg:text-[18px] xl:text-[20px] font-semibold text-mind-violet mb-1"
                   >
                     {current.subtitle}
                   </motion.div>
                 )}
                 <motion.h2 
                   variants={itemVariants}
-                  className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#0D0A09] leading-[1.1] mb-2"
+                  className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-[1.1] mb-2"
                 >
                   {current.title}
                 </motion.h2>
                 <motion.p 
                   variants={itemVariants}
-                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 max-w-3xl leading-snug min-h-[90px]"
+                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-3xl leading-snug min-h-[90px]"
                 >
                   {current.description}
                 </motion.p>
@@ -209,10 +209,10 @@ const Features = () => {
                       key={i}
                       custom={i}
                     >
-                      <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="w-5 h-5 text-mind-violet mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
-                      <span className="text-gray-600">{item}</span>
+                      <span className="text-gray-300">{item}</span>
                     </motion.div>
                   ))}
                 </motion.div>
@@ -220,7 +220,7 @@ const Features = () => {
                   variants={itemVariants}
                   className="flex flex-col sm:flex-row gap-4 mt-auto pt-8 sm:pt-12 lg:pt-16"
                 >
-                  <button className="bg-[#0D0A090D] border border-gray-300 text-[#0D0A09] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-gray-200 transition-colors duration-200"
+                  <button className="bg-white/5 border border-white/20 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-white/10 transition-colors duration-200"
                     onClick={() => {
                       navigate('/features')
                       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -260,8 +260,8 @@ const Features = () => {
             }}
             className={`w-3 h-3 rounded-full transition-all duration-300 border-2 focus:outline-none ${
               i === index
-                ? 'bg-[#0D0A09] border-[#0D0A09] scale-125'
-                : 'bg-gray-300 border-gray-300 opacity-60'
+                ? 'bg-mind-violet border-mind-violet scale-125'
+                : 'bg-white/20 border-white/30 opacity-60'
             }`}
             aria-label={`Go to slide ${i + 1}`}
           />

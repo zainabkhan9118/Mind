@@ -10,17 +10,17 @@ const Experiences = () => {
   };
 
   return (
-    <div className="bg-white py-10 sm:py-16 md:py-20">
+    <div className="py-10 sm:py-16 md:py-20">
       <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-6">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-lg text-gray-900 max-w-4xl mx-auto mb-2">
+          <p className="text-lg text-gray-400 max-w-4xl mx-auto mb-2">
             Experiences
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
             <span className="whitespace-nowrap block text-balance">Escape.Explore.Evolve</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-4xl mx-auto">
             Step into virtual worlds that relax, heal, and inspire by experiencing guided escapes designed for clarity, calm, and growth.
           </p>
         </div>
@@ -28,7 +28,7 @@ const Experiences = () => {
         {/* Card Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Card 1 - Unlock a New State of Mind */}
-          <Card className="group hover:shadow-lg h-[420px] sm:h-[480px] md:h-[668px] w-full border-none transition-shadow duration-300 overflow-hidden p-0 text-white relative rounded-xl md:rounded-2xl lg:rounded-3xl">
+          <Card className="group hover:shadow-lg hover:shadow-mind-violet/10 h-[420px] sm:h-[480px] md:h-[668px] w-full border-none transition-shadow duration-300 overflow-hidden p-0 text-white relative rounded-xl md:rounded-2xl lg:rounded-3xl">
             <div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105" style={{ backgroundImage: "url('/Experience.jpg')", backgroundSize: "100% 100%", backgroundPosition: "center" }} />
             <div className="flex flex-col h-full p-4 sm:p-8 relative z-10">
               {/* Large Number */}
@@ -54,7 +54,7 @@ const Experiences = () => {
                     <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 cursor-pointer transition-all">
                       <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
                       <button
-                        className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                        className="absolute inset-0 flex items-center justify-center bg-mind-violet/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                         onClick={() => {
                           handleNavClick();
                           navigate('/learn-more');
@@ -70,7 +70,7 @@ const Experiences = () => {
           </Card>
 
           {/* Card 2 - Redefining the Future of Mental Health */}
-          <Card className="group hover:shadow-lg text-white h-[420px] sm:h-[480px] md:h-[668px] w-full border-none transition-shadow duration-300 overflow-hidden p-0 relative rounded-xl md:rounded-2xl lg:rounded-3xl">
+          <Card className="group hover:shadow-lg hover:shadow-mind-violet/10 text-white h-[420px] sm:h-[480px] md:h-[668px] w-full border-none transition-shadow duration-300 overflow-hidden p-0 relative rounded-xl md:rounded-2xl lg:rounded-3xl">
             <div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-105" style={{ backgroundImage: "url('/2.png')", backgroundSize: "100% 100%", backgroundPosition: "center" }} />
             <div className="flex flex-col h-full p-4 sm:p-8 relative z-10">
               {/* Large Number */}
@@ -91,7 +91,7 @@ const Experiences = () => {
                     <div className="relative group flex items-center justify-center w-16 h-16 border border-white rounded-full flex-shrink-0 cursor-pointer transition-all">
                       <ArrowRight className="text-white transition-opacity duration-200 group-hover:opacity-0" size={20} />
                       <button
-                        className="absolute inset-0 flex items-center justify-center bg-black/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                        className="absolute inset-0 flex items-center justify-center bg-mind-violet/80 text-white text-xs font-semibold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                         onClick={() => {
                           handleNavClick();
                           navigate('/learn-more');

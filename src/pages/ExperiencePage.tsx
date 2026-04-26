@@ -9,7 +9,7 @@ const ExperiencePage = () => {
     <div> 
       <ExperienceHero />
       <ExperienceCards />
-      <div className="mt-[-60px] sm:mt-[-80px] md:mt-[-140px] lg:mt-[-200px] xl:mt-[-180px] 2xl:mt-[-200px] 3xl:mt-[-220px] 4xl:mt-[-240px]">
+      <div>
         <Benefits />
       </div>
       <Reason />
