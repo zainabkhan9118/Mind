@@ -8,7 +8,7 @@ const HeroSection = () => {
         muted
         playsInline
         poster="/hero.png"
-        preload="metadata"
+        preload="auto"
         className="absolute inset-0 w-full h-72 sm:h-96 md:h-full object-cover object-center z-0"
         style={{ background: "transparent" }}
       >
