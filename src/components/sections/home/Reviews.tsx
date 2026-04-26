@@ -1,33 +1,30 @@
-
-
-
 import { useState, useEffect, useRef } from 'react';
 
 const testimonials = [
   {
-  quote: "Using the VR sessions daily helps me stay calm, and more relaxed throughout my routine.",
-    name: "John Smith",
-    title: "Product Designer"
+    quote: "I used to struggle to switch off after long days. Now I can actually reset my mind in minutes.",
+    name: "Dr. Emily Carter",
+    title: "Medical Doctor"
   },
   {
-  quote: "The platform is easy to use and makes my daily mental wellness routine enjoyable and effective.",
-    name: "Sara Lee",
+    quote: "My performance didn't change because I trained more. It changed because I learned how to show up mentally.",
+    name: "Tiago Fernandes",
+    title: "Professional Athlete"
+  },
+  {
+    quote: "I don't rely on motivation anymore. I know how to get into the right mindset when it matters.",
+    name: "Ryan Brooks",
     title: "Entrepreneur"
   },
   {
-    quote: "The guided meditations help me sleep better and wake up refreshed. Highly recommended!",
-    name: "Emily Carter",
-    title: "Marketing Specialist"
+    quote: "This helped me stay focused without feeling overwhelmed. It's like having control over my own mind again.",
+    name: "Olivia Santos",
+    title: "University Student"
   },
   {
-    quote: "A must-have for anyone looking to improve their mental clarity and reduce stress.",
-    name: "Michael Brown",
-    title: "Freelance Writer"
-  },
-  {
-    quote: "The community support and live sessions make me feel connected and motivated.",
-    name: "Priya Singh",
-    title: "Graduate Student"
+    quote: "I'm more present, less reactive, and clearer in my decisions. That changed everything in how I lead.",
+    name: "David Williams",
+    title: "Executive"
   }
 ];
 
@@ -37,7 +34,6 @@ const Reviews = () => {
   const [current, setCurrent] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Helper to clear and restart timer
   const restartTimer = () => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
@@ -58,8 +54,7 @@ const Reviews = () => {
   return (
     <div className='bg-mind-navy/40 justify-center items-center flex flex-col py-20'>
       <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Testimonial Card with Border */}
-  <div className="rounded-lg p-8 mb-6 transition-all duration-500 min-h-[220px] md:min-h-[140px] 2xl:min-h-[180px] 3xl:min-h-[220px] flex flex-col justify-center">
+        <div className="rounded-lg p-8 mb-6 transition-all duration-500 min-h-[220px] md:min-h-[140px] 2xl:min-h-[180px] 3xl:min-h-[220px] flex flex-col justify-center">
           <h5 className='text-xl md:text-2xl 2xl:text-3xl 3xl:text-4xl text-center text-white font-bold mb-4 max-w-3xl 2xl:max-w-4xl 3xl:max-w-5xl mx-auto'>
             "{testimonial.quote}"
           </h5>

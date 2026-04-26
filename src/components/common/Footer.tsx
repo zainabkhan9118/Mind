@@ -15,10 +15,10 @@ const Footer = () => {
     <footer className="text-white">
       {/* Path to Deeper Calm Section */}
       <div className="bg-mind-navy/80 text-white py-16 px-4">
-       <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-10">
-            A simple path to deeper calm, clarity,<br />
-            and personal growth!
+            You don't fix your mind.<br />
+            You shift your state.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -30,10 +30,10 @@ const Footer = () => {
                     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <h3 className="font-bold">1. Choose Your Path</h3>
+                <h3 className="font-bold">1. Enter the environment</h3>
               </div>
               <p className="text-sm text-gray-400">
-                Pick from guided meditation, immersive 360° VR worlds, or AI-powered mindfulness — all tailored to your specific mental wellness needs.
+                Step into immersive worlds designed to influence your internal state — visually, audibly, neurologically.
               </p>
             </div>
 
@@ -46,10 +46,10 @@ const Footer = () => {
                     <path d="M12 8V16M8 12H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                   </svg>
                 </div>
-                <h3 className="font-bold">2. Dive Into the Experience</h3>
+                <h3 className="font-bold">2. Your state begins to change</h3>
               </div>
               <p className="text-sm text-gray-400">
-                Put on your headset or press play to enter a personalized, multi-sensory environment designed to support your mental wellness goals.
+                Without forcing focus or relaxation, your system starts to regulate — naturally shifting how you feel and think.
               </p>
             </div>
 
@@ -62,10 +62,10 @@ const Footer = () => {
                     <path d="M22 12L18 16L14 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <h3 className="font-bold">3. Grow with Every Session</h3>
+                <h3 className="font-bold">3. You take control</h3>
               </div>
               <p className="text-sm text-gray-400">
-                Track your progress, receive daily insights, and build healthy mental habits with the help of your AI Mind Coach.
+                With repeated sessions, you stop reacting to your mind — and start directing it with intention.
               </p>
             </div>
           </div>

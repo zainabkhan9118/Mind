@@ -20,11 +20,11 @@ const FeaturesHeroSection = () => {
             className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl 3xl:text-8xl font-extrabold leading-tight mb-6 text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.7)]"
             style={{ textShadow: '0 4px 32px rgba(0,0,0,0.7), 0 1.5px 0 #000' }}
           >
-            Redefine Mental<br /> Wellness
-            
+            Train your state.<br />Change your performance.
           </h1>
           <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl text-white max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl mx-auto mb-0 drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]" style={{textShadow: '0 2px 12px rgba(0,0,0,0.5)'}}>
-            Mind Player combines neuroscience, immersive VR, and AI to offer a transformative mental wellness experience. Explore the core features that empower you to relax deeply, grow mindfully, and connect authentically.
+            Mind Player is designed to help you regulate how you feel, think and perform — on demand.
+            From immersive environments to intelligent guidance, every feature is built to give you control over your internal state.
           </p>
         </div>
       </div>

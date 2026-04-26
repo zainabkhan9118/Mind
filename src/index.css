@@ -83,9 +83,16 @@
   }
   body {
     @apply text-foreground;
-    background: linear-gradient(180deg, #000000 0%, #0A081A 30%, #1A0A2E 60%, #50005C 100%);
-    background-attachment: fixed;
+    background: #000000;
     min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #000000 0%, #0A081A 30%, #1A0A2E 60%, #50005C 100%);
   }
 }
 

@@ -23,10 +23,11 @@ const HeroSection = () => {
             className="text-xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold leading-tight mb-4"
             style={{ textTransform: "uppercase" }}
           >
-            YOUR MIND. LIMITLESS.
+            CONTROL YOUR MIND. ON DEMAND.
           </h1>
           <p className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl max-w-xs sm:max-w-sm md:max-w-md xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl mb-0">
-            Discover the power of immersive mental wellness.
+            Not a meditation app.<br />
+            A system to regulate how you think, feel, and perform — in real time.
           </p>
           </div>
         </div>

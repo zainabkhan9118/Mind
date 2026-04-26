@@ -21,11 +21,12 @@ const ExperienceHero = () => {
             className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl 3xl:text-8xl font-extrabold leading-tight mb-6 text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.7)]"
             style={{ textShadow: '0 4px 32px rgba(0,0,0,0.7), 0 1.5px 0 #000' }}
           >
-            Immersive<br /> Experiences
-            
+            Enter the state
           </h1>
           <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl text-white max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl mx-auto mb-0 drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]" style={{textShadow: '0 2px 12px rgba(0,0,0,0.5)'}}>
-           Explore transformative environments designed to calm the mind, expand awareness, and support your personal journey — all powered by science, sound, and stunning virtual reality.
+            Mind Player doesn't just guide you.<br />
+            It places you inside environments designed to change how your brain operates.<br />
+            What you experience shapes your state.
           </p>
         </div>
       </div>

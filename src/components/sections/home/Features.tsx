@@ -8,37 +8,41 @@ const carouselData = [
     subtitle: 'Features',
     title: (
       <>
-        Healing Music &<br className="hidden sm:block" /> Frequencies
+        Immersive<br className="hidden sm:block" /> Environments
       </>
     ),
     description:
-      'Discover the power of therapeutic sounds that gently guide your mind toward deeper relaxation, emotional balance, and improved focus.',
-    list: [
-      'Binaural beats',
-      'Solfeggio tones',
-      'EMDR audio',
-      'Natural soundscapes',
-    ],
+      'Not for escape. For control. Designed to shift your nervous system in minutes.',
+    list: [] as string[],
     image: '/Feature 1.jpg',
-    alt: 'Healing Music',
+    alt: 'Immersive Environments',
     button: 'Explore All Features',
   },
   {
     subtitle: 'Features',
     title: (
       <>
-        AI-Powered<br className="hidden sm:block" /> Mind Coach
+        Neural Sound<br className="hidden sm:block" /> Systems
       </>
     ),
     description:
-      'Get personalized daily support from your intelligent AI guide, designed to help you build better habits, stay grounded, and grow at your own pace.',
-    list: [
-      'Personalized suggestions',
-      'Daily check-ins & support',
-      'Coaching',
-      'Guided self-growth journeys',
-    ],
-    image: '/Feature 2.png',
+      'Sound engineered to regulate brain states. Focus. Calm. Recovery. Activation.',
+    list: [] as string[],
+    image: '/IMAGE 4.PNG',
+    alt: 'Neural Sound Systems',
+    button: 'Explore All Features',
+  },
+  {
+    subtitle: 'Features',
+    title: (
+      <>
+        AI Mind<br className="hidden sm:block" /> Coach
+      </>
+    ),
+    description:
+      'Understands your patterns. Guides your state. Adapts in real time.',
+    list: [] as string[],
+    image: '/IMAGE 5.PNG',
     alt: 'AI Mind Coach',
     button: 'Explore All Features',
   },
@@ -46,37 +50,28 @@ const carouselData = [
     subtitle: 'Features',
     title: (
       <>
-        Supportive<br className="hidden sm:block" /> Wellness Community
+        Collective<br className="hidden sm:block" /> Experiences
       </>
     ),
     description:
-      'Join a welcoming space where you can meditate, heal, and connect with like-minded individuals through shared experiences and live group sessions.',
-    list: [
-      'Create & join group sessions',
-      'Private spaces',
-      'Peer-to-peer support',
-    ],
-    image: '/Feature 3.jpg',
-    alt: 'Wellness Community',
+      'Train your mind alone or with others. Shared states. Real connection.',
+    list: [] as string[],
+    image: '/IMAGE 6.PNG',
+    alt: 'Collective Experiences',
     button: 'Explore All Features',
   },
   {
     subtitle: 'Features',
     title: (
       <>
-        Immersive<br className="hidden sm:block" /> VR Experiences
+        Custom<br className="hidden sm:block" /> Minds
       </>
     ),
     description:
-      'Step into calming virtual worlds designed to reduce stress, enhance mindfulness, and promote emotional healing through immersive VR journeys.',
-    list: [
-      'Guided meditations',
-      'Therapeutic environments',
-      'Interactive exercises',
-      'Real-time feedback',
-    ],
-    image: '/Feature 4.png',
-    alt: 'VR Experiences',
+      'Build your own mental environments. Tailored to how you need to feel — not just what you want to hear.',
+    list: [] as string[],
+    image: '/IMAGE 7.PNG',
+    alt: 'Custom Minds',
     button: 'Explore All Features',
   },
 ];

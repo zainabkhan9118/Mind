@@ -5,12 +5,11 @@ import HeroSection from "@/components/sections/home/HeroSection_new";
 import MentalWellness from "@/components/sections/home/MentalWellness";
 import Reviews from "@/components/sections/home/Reviews";
 
-
 const Home = () => {
   return (
     <div className="">
       <HeroSection />
-      <MentalWellness /> 
+      <MentalWellness />
       <Experiences />
       <Features />
       <Benefits />
