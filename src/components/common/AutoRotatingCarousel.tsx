@@ -81,7 +81,7 @@ const AutoRotatingCarousel = () => {
   }, [currentIndex, carouselItems.length]);
 
   return (
-    <div className="relative w-full h-[500px] rounded-xl overflow-hidden">
+    <div className="relative w-full h-[500px] overflow-hidden">
       <div
         ref={carouselRef}
         className={`absolute inset-0 flex${isTransitioning ? ' transition-transform duration-1000 ease-in-out' : ''}`}
