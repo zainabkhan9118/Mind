@@ -38,7 +38,7 @@ const Pricing = () => {
             <li>✓ Join community sessions</li>
             <li>✓ Limited AI Mind Coach</li>
           </ul>
-          <button className="mt-auto w-full rounded-full bg-mind-violet/20 text-white font-semibold py-3 text-base 2xl:text-lg 3xl:text-xl 2xl:py-4 3xl:py-5 shadow-sm hover:bg-mind-violet/40 transition border border-mind-violet/30">Start Free</button>
+          <button className="mt-auto w-full rounded-full bg-mind-violet text-white font-bold py-3 text-base 2xl:text-lg 3xl:text-xl 2xl:py-4 3xl:py-5 shadow-md shadow-mind-violet/30 hover:bg-mind-violet-light transition border-2 border-white/40">Start Free →</button>
         </div>
 
         {/* Premium Card */}
@@ -67,7 +67,14 @@ const Pricing = () => {
             <li>✓ Create and host private sessions</li>
             <li>✓ Early access to new environments</li>
           </ul>
-          <button className="mt-auto w-full rounded-full bg-mind-violet text-white font-semibold py-3 text-base 2xl:text-lg 3xl:text-xl 2xl:py-4 3xl:py-5 shadow-md shadow-mind-violet/30 hover:bg-mind-violet-light transition">Unlock Premium</button>
+          <button
+            className="mt-auto w-full rounded-full font-bold py-3 text-base 2xl:text-lg 3xl:text-xl 2xl:py-4 3xl:py-5 transition text-white"
+            style={{
+              background: 'transparent',
+              border: '1px solid rgba(109, 95, 247, 0.8)',
+              boxShadow: '0 0 12px rgba(109, 95, 247, 0.6), inset 0 0 12px rgba(109, 95, 247, 0.1)',
+            }}
+          >Unlock Premium</button>
         </div>
       </div>
     </section>
