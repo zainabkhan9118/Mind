@@ -7,7 +7,7 @@ const testimonials = [
     title: "Medical Doctor"
   },
   {
-    quote: "My performance didn't change because I trained more. It changed because I learned how to show up mentally.",
+    quote: "My performance didn't change because I trained more. It changed when I showed up mentally.",
     name: "Tiago Fernandes",
     title: "Professional Athlete"
   },

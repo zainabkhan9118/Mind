@@ -17,6 +17,7 @@ const carouselData = [
     image: '/Feature 1.jpg',
     alt: 'Immersive Environments',
     button: 'Explore All Features',
+    objectPosition: 'center bottom',
   },
   {
     subtitle: 'Features',
@@ -31,6 +32,7 @@ const carouselData = [
     image: '/IMAGE 4.PNG',
     alt: 'Neural Sound Systems',
     button: 'Explore All Features',
+    objectPosition: 'center',
   },
   {
     subtitle: 'Features',
@@ -45,6 +47,7 @@ const carouselData = [
     image: '/IMAGE 5.PNG',
     alt: 'AI Mind Coach',
     button: 'Explore All Features',
+    objectPosition: 'center',
   },
   {
     subtitle: 'Features',
@@ -59,6 +62,7 @@ const carouselData = [
     image: '/IMAGE 6.PNG',
     alt: 'Collective Experiences',
     button: 'Explore All Features',
+    objectPosition: 'center',
   },
   {
     subtitle: 'Features',
@@ -73,6 +77,7 @@ const carouselData = [
     image: '/IMAGE 7.PNG',
     alt: 'Custom Minds',
     button: 'Explore All Features',
+    objectPosition: 'center',
   },
 ];
 
@@ -227,14 +232,15 @@ const Features = () => {
               </div>
 
               {/* Right Content - Carousel Image */}
-              <motion.div 
+              <motion.div
                 variants={itemVariants}
-                className="h-[500px] sm:h-[450px] md:h-[550px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] 2xl:max-w-[1000px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700 flex items-center justify-center"
+                className="aspect-[4/3] sm:aspect-auto sm:h-[450px] md:h-[550px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] 2xl:max-w-[1000px] rounded-3xl overflow-hidden mt-8 lg:mt-0 transition-all duration-700"
               >
                 <img
                   src={current.image}
                   alt={current.alt}
-                  className="w-full h-full object-top"
+                  className="w-full h-full object-cover rounded-3xl"
+                  style={{ objectPosition: current.objectPosition }}
                   loading="lazy"
                 />
               </motion.div>

@@ -35,7 +35,7 @@ const MentalWellness = () => {
             {/* Image at the bottom */}
             <div className="w-full h-48 sm:h-56 mt-auto overflow-hidden">
               <img
-                src="/IMAGE 1.PNG"
+                src="/IMAGE 1.jpeg"
                 alt="Controlled mental environment"
                 className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -61,7 +61,7 @@ const MentalWellness = () => {
             {/* Image at the bottom */}
             <div className="w-full h-48 sm:h-56 mt-auto overflow-hidden">
               <img
-                src="/IMAGE 2.PNG"
+                src="/IMAGE 2.jpeg"
                 alt="Rewire mind"
                 className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -87,7 +87,7 @@ const MentalWellness = () => {
             {/* Image at the bottom */}
             <div className="w-full h-48 sm:h-56 mt-auto overflow-hidden">
               <img
-                src="/IMAGE 3.PNG"
+                src="/IMAGE 3.jpeg"
                 alt="Adaptive mind"
                 className="w-full h-full object-cover md:rounded-b-lg transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"

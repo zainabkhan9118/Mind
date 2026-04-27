@@ -18,7 +18,7 @@ const ExperienceCards = () => {
         {/* Card 1 */}
         <Card className="group w-full md:w-[48%] lg:w-[48%] xl:w-[48%] 2xl:w-[48%] 3xl:w-[48%] h-[700px] sm:h-[750px] md:h-[950px] lg:h-[950px] xl:h-[1000px] 2xl:h-[1150px] 3xl:h-[1250px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 glass-card flex flex-col">
           <div className="w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[500px] xl:h-[600px] 2xl:h-[650px] 3xl:h-[700px] flex-shrink-0">
-            <img src="/E1.svg" alt="Step into new states" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
+            <img src="/E1.svg" alt="Step into new states" className="w-full h-full object-cover rounded-3xl e1-mobile-top" loading="lazy" />
           </div>
           <CardContent className="p-5 sm:p-6 lg:p-6 xl:p-8 2xl:p-10 flex-1 flex flex-col justify-start">
             <h3 className="font-wix font-bold text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-white leading-[120%] tracking-[-0.01em] mb-2 lg:mb-3 2xl:mb-4">
@@ -36,7 +36,7 @@ const ExperienceCards = () => {
         {/* Card 2 */}
         <Card className="group w-full md:w-[48%] lg:w-[48%] xl:w-[48%] 2xl:w-[48%] 3xl:w-[48%] h-[700px] sm:h-[750px] md:h-[950px] lg:h-[950px] xl:h-[1000px] 2xl:h-[1150px] 3xl:h-[1250px] border-none shadow-none duration-300 overflow-hidden p-0 flex-shrink-0 glass-card flex flex-col">
           <div className="w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[500px] xl:h-[600px] 2xl:h-[650px] 3xl:h-[700px] flex-shrink-0">
-            <img src="/E2.svg" alt="Build your state" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
+            <img src="/E2.jpeg" alt="Build your state" className="w-full h-full object-cover rounded-3xl" loading="lazy" />
           </div>
           <CardContent className="p-5 sm:p-6 lg:p-6 xl:p-8 2xl:p-10 flex-1 flex flex-col justify-start">
             <h3 className="font-wix font-bold text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-white leading-[120%] tracking-[-0.01em] mb-2 lg:mb-3 2xl:mb-4">

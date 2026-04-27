@@ -25,7 +25,7 @@ const Pricing = () => {
         >
           <div className="w-full flex flex-col items-center mb-2 sm:mb-4 gap-4 sm:gap-[24px]">
             <span className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold mb-1 sm:mb-2 tracking-tight text-white">FREE</span>
-            <p className="text-center text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 mb-2">
+            <p className="text-center text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-white font-bold mb-2">
               Try the experience
             </p>
             <p className="text-center text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 mb-4 sm:mb-6">
@@ -43,12 +43,17 @@ const Pricing = () => {
 
         {/* Premium Card */}
         <div
-          className="glass-card-strong rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col items-center w-full max-w-xs sm:max-w-md md:max-w-[420px] lg:max-w-[480px] 2xl:max-w-[520px] 3xl:max-w-[580px] h-auto md:h-[560px] 2xl:h-[620px] 3xl:h-[700px] card-glow"
-          style={{ opacity: 1, border: '1px solid rgba(109, 95, 247, 0.3)' }}
+          className="rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col items-center w-full max-w-xs sm:max-w-md md:max-w-[420px] lg:max-w-[480px] 2xl:max-w-[520px] 3xl:max-w-[580px] h-auto md:h-[560px] 2xl:h-[620px] 3xl:h-[700px]"
+          style={{
+            background: 'linear-gradient(135deg, rgba(109, 95, 247, 0.18) 0%, rgba(80, 0, 92, 0.25) 100%)',
+            border: '1px solid rgba(109, 95, 247, 0.6)',
+            boxShadow: '0 0 40px rgba(109, 95, 247, 0.25), 0 0 80px rgba(80, 0, 92, 0.15)',
+            backdropFilter: 'blur(20px)',
+          }}
         >
           <div className="w-full flex flex-col items-center mb-2 sm:mb-4 gap-4 sm:gap-[24px]">
             <span className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold mb-1 sm:mb-2 tracking-tight text-mind-violet">PREMIUM</span>
-            <p className="text-center text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 mb-2">
+            <p className="text-center text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-white font-bold mb-2">
               Full control
             </p>
             <p className="text-center text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-gray-400 mb-4 sm:mb-6">

@@ -16,32 +16,37 @@ const AutoRotatingCarousel = () => {
       src: "/IMAGE 8.PNG",
       alt: "Regulate Your State",
       title: "Regulate Your State",
-      description: "Train your nervous system to shift from stress to clarity on demand.\nControl how you feel, think and perform."
+      description: "Train your nervous system to shift from stress to clarity on demand.\nControl how you feel, think and perform.",
+      objectPosition: "center",
     },
     {
       src: "/l2.png",
       alt: "Enter Deep Recovery",
       title: "Enter Deep Recovery",
-      description: "Downshift your system and access deeper sleep states.\nReal recovery starts with regulation."
+      description: "Downshift your system and access deeper sleep states.\nReal recovery starts with regulation.",
+      objectPosition: "center",
     },
     {
-      src: "/Image 03.png",
+      src: "/Image 01.jpg",
       alt: "Train Together",
       title: "Train Together",
-      description: "Join shared sessions and regulate your state alongside others.\nPerformance scales with environment."
+      description: "Join shared sessions and regulate your state alongside others.\nPerformance scales with environment.",
+      objectPosition: "center",
     },
     {
       src: "/IMAGE 9.PNG",
       alt: "Upgrade Your State",
       title: "Upgrade Your\nState",
-      description: "Shift from overload to clarity in minutes.\nBetter state — better decisions — better outcomes."
+      description: "Shift from overload to clarity in minutes.\nBetter state — better decisions — better outcomes.",
+      objectPosition: "center",
     },
     {
-      src: "/l5.png",
+      src: "/l5.jpeg",
       alt: "Find Control",
       title: "Find Control",
-      description: "Calm is not enough.\nLearn to regulate and stay in control under pressure."
-    }
+      description: "Calm is not enough.\nLearn to regulate and stay in control under pressure.",
+      objectPosition: "left center",
+    },
   ];
 
   const extendedItems = [...carouselItems, carouselItems[0]];
@@ -84,12 +89,14 @@ const AutoRotatingCarousel = () => {
       >
         {extendedItems.map((item, index) => (
           <div key={index} className="relative min-w-full flex-shrink-0 h-full">
-            <div
-              className="absolute inset-0 w-full h-full bg-no-repeat bg-center z-0"
-              style={{ backgroundImage: `url('${item.src}')`, backgroundSize: 'cover' }}
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              style={{ objectPosition: item.objectPosition }}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
-            <div className="absolute inset-0 flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 text-white z-10 max-w-3xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent z-10"></div>
+            <div className="absolute inset-0 flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 text-white z-20 max-w-3xl">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 whitespace-pre-line">{item.title}</h2>
               <p className="text-lg sm:text-xl mb-8 whitespace-pre-line">{item.description}</p>
               <div className="flex flex-wrap gap-4">

@@ -25,7 +25,7 @@ const List = () => {
               <img
                 src="/Feature 1.jpg"
                 alt="Guided Sessions"
-                className="w-full h-full rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
+                className="w-full h-full object-cover object-bottom rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
                 loading="lazy"
               />
             </div>
@@ -124,7 +124,7 @@ const List = () => {
               className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[762px] 2xl:h-[800px] 3xl:h-[900px] 4xl:h-[1100px] overflow-hidden shadow-none border-none bg-transparent"
             >
               <img
-                src="/Feature 3.jpg"
+                src="/IMAGE 5.PNG"
                 alt="Intelligent State Guidance"
                 className="w-full h-full object-cover rounded-t-xl sm:rounded-t-2xl lg:rounded-t-none lg:rounded-l-3xl"
                 loading="lazy"
@@ -209,7 +209,7 @@ const List = () => {
               className="w-full lg:w-1/2 h-[380px] sm:h-[400px] md:h-[500px] lg:h-[686px] 2xl:h-[800px] 3xl:h-[900px] 4xl:h-[1100px] overflow-hidden shadow-none border-none bg-transparent"
             >
               <img
-                src="/Feature 4.png"
+                src="/IMAGE 6.PNG"
                 alt="Train in shared environments"
                 className="w-full h-full object-cover rounded-b-xl sm:rounded-b-3xl lg:rounded-bl-none lg:rounded-r-3xl"
                 loading="lazy"
