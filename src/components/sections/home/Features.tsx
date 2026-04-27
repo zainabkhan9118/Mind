@@ -192,15 +192,15 @@ const Features = () => {
                 >
                   {current.title}
                 </motion.h2>
-                <motion.p 
+                <motion.p
                   variants={itemVariants}
-                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-3xl leading-snug min-h-[90px]"
+                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-3xl leading-snug sm:min-h-[90px]"
                 >
                   {current.description}
                 </motion.p>
-                <motion.div 
+                <motion.div
                   variants={itemVariants}
-                  className="space-y-2 mt-4 sm:mt-6 min-h-[100px]"
+                  className="space-y-2 sm:mt-6 sm:min-h-[100px]"
                 >
                   {current.list.map((item, i) => (
                     <motion.div 
@@ -218,7 +218,7 @@ const Features = () => {
                 </motion.div>
                 <motion.div 
                   variants={itemVariants}
-                  className="flex flex-col sm:flex-row gap-4 mt-auto pt-8 sm:pt-12 lg:pt-16"
+                  className="flex flex-col sm:flex-row gap-4 mt-auto sm:pt-12 lg:pt-16"
                 >
                   <button className="bg-white/5 border border-white/20 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:bg-white/10 transition-colors duration-200"
                     onClick={() => {
