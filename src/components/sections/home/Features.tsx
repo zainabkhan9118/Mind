@@ -177,7 +177,7 @@ const Features = () => {
               className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
             >
               {/* Left Content */}
-              <div className="h-[400px] md:h-[500px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full md:max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-between transition-all duration-700">
+              <div className="h-auto sm:h-[500px] md:h-[500px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full md:max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-start sm:justify-between gap-3 sm:gap-0 transition-all duration-700">
                 {current.subtitle && (
                   <motion.div 
                     variants={itemVariants}
