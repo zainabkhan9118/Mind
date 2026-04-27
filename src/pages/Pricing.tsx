@@ -38,7 +38,7 @@ const Pricing = () => {
             <li>✓ Join community sessions</li>
             <li>✓ Limited AI Mind Coach</li>
           </ul>
-          <button className="mt-auto w-full rounded-full bg-mind-violet text-white font-bold py-3 text-base 2xl:text-lg 3xl:text-xl 2xl:py-4 3xl:py-5 shadow-md shadow-mind-violet/30 hover:bg-mind-violet-light transition border-2 border-white/40">Start Free →</button>
+          <button className="mt-auto w-full rounded-full bg-mind-violet text-white font-bold py-3 text-base 2xl:text-lg 3xl:text-xl 2xl:py-4 3xl:py-5 shadow-md shadow-mind-violet/30 hover:bg-mind-violet-light transition border-2 border-white/40">Start Free</button>
         </div>
 
         {/* Premium Card */}
