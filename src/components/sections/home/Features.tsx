@@ -38,7 +38,7 @@ const carouselData = [
     subtitle: 'Features',
     title: (
       <>
-        AI Mind<br className="hidden sm:block" /> Coach
+        AI Mind<br /> Coach
       </>
     ),
     description:
@@ -68,7 +68,7 @@ const carouselData = [
     subtitle: 'Features',
     title: (
       <>
-        Custom<br className="hidden sm:block" /> Minds
+        Custom<br /> Minds
       </>
     ),
     description:
