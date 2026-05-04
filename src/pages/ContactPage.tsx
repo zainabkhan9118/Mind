@@ -234,7 +234,12 @@ const ContactPage = () => {
           <div className="flex justify-center pt-2 2xl:pt-4 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
             <button
               type="submit"
-              className="bg-mind-violet hover:bg-mind-violet-light text-white px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5 rounded-full font-semibold text-base 2xl:text-lg 3xl:text-xl shadow-md shadow-mind-violet/20 transition-colors duration-200 w-full sm:w-auto"
+              className="text-white px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5 rounded-full font-semibold text-base 2xl:text-lg 3xl:text-xl transition-all duration-200 w-full sm:w-auto"
+              style={{
+                background: 'transparent',
+                border: '1px solid rgba(109, 95, 247, 0.8)',
+                boxShadow: '0 0 14px rgba(109, 95, 247, 0.6), inset 0 0 12px rgba(109, 95, 247, 0.1)',
+              }}
               disabled={submitting}
             >
               {submitting ? "Sending..." : "Send Message"}

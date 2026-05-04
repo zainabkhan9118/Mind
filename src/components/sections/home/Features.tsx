@@ -164,7 +164,7 @@ const Features = () => {
   return (
   <div className="flex flex-col items-center justify-center min-h-[800px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-screen bg-mind-navy/40 py-10 sm:py-16 md:py-20">
       {/* Main Container */}
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 3xl:px-32 py-12 md:py-16 lg:py-20">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 3xl:px-32 py-6 sm:py-12 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -177,7 +177,7 @@ const Features = () => {
               className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
             >
               {/* Left Content */}
-              <div className="h-auto sm:h-[500px] md:h-[500px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full md:max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-start sm:justify-between gap-3 sm:gap-0 transition-all duration-700">
+              <div className="h-[380px] sm:h-[500px] md:h-[500px] lg:h-[640px] xl:h-[700px] 2xl:h-[800px] w-full md:max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px] p-4 sm:p-6 lg:p-8 rounded-3xl shadow-none border-none flex flex-col justify-start sm:justify-between gap-3 sm:gap-0 transition-all duration-700">
                 {current.subtitle && (
                   <motion.div 
                     variants={itemVariants}
@@ -194,7 +194,7 @@ const Features = () => {
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
-                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-3xl leading-snug sm:min-h-[90px]"
+                  className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-3xl leading-snug min-h-[80px] sm:min-h-[90px]"
                 >
                   {current.description}
                 </motion.p>

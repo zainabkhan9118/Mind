@@ -81,7 +81,7 @@ const Footer = () => {
 
       {/* Main Footer Navigation */}
       <div className="bg-mind-navy/60 backdrop-blur-sm py-16 px-4 text-white">
-        <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] 4xl:max-w-[80%] mx-auto px-4 xl:px-8 2xl:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-10">
+        <div className="max-w-screen-2xl 2xl:max-w-[90%] 3xl:max-w-[85%] 4xl:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10">
           {/* Quick Links */}
           <div className="text-center xl:text-left min-w-0">
             <h3 className="font-bold mb-4 text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl uppercase tracking-wider text-white">Quick Links</h3>

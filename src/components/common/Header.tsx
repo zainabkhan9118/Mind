@@ -97,9 +97,14 @@ const Header = () => {
 
           {/* Contact Us Button */}
           <div className="hidden md:flex items-center">
-            <Link 
-              to="/contact" 
-              className="bg-mind-violet text-white px-4 py-2 rounded-4xl text-sm font-medium hover:bg-mind-violet-light transition-colors duration-200"
+            <Link
+              to="/contact"
+              className="text-white px-5 py-2 rounded-full text-sm font-medium transition-all duration-200"
+              style={{
+                background: 'transparent',
+                border: '1px solid rgba(255, 255, 255, 0.8)',
+                boxShadow: '0 0 12px rgba(255, 255, 255, 0.35), inset 0 0 8px rgba(255, 255, 255, 0.05)',
+              }}
               onClick={handleNavClick}
             >
               Try For Free
