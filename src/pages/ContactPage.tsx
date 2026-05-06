@@ -40,7 +40,8 @@ const ContactPage = () => {
   const [form, setForm] = useState<FormState>(initialState);
   const [errors, setErrors] = useState<FormErrors>({});
   const [success, setSuccess] = useState(false);
-  const [submitting] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const validate = (): FormErrors => {
     const errs: FormErrors = {};
@@ -69,24 +70,41 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const errs = validate();
     setErrors(errs);
     if (Object.keys(errs).length) return;
 
-    // Construct mailto link
-    const subject = encodeURIComponent(`Contact Form: ${form.topic || 'No Topic'}`);
-    const body = encodeURIComponent(
-      `First Name: ${form.firstName}\n` +
-      `Last Name: ${form.lastName}\n` +
-      `Email: ${form.email}\n` +
-      `Phone: ${form.phone}\n` +
-      `Topic: ${form.topic}\n` +
-      `Message: ${form.message}\n` +
-      `Agreed to data processing: ${form.agree ? 'Yes' : 'No'}`
-    );
-    window.location.href = `mailto:hello@mindplayer.com?subject=${subject}&body=${body}`;
+    setSubmitting(true);
+    setSubmitError(false);
+    try {
+      const data = new FormData();
+      data.append("firstName", form.firstName);
+      data.append("lastName", form.lastName);
+      data.append("email", form.email);
+      data.append("phone", form.phone);
+      data.append("topic", form.topic);
+      data.append("message", form.message);
+      if (form.attachment) data.append("attachment", form.attachment);
+
+      const res = await fetch("https://formspree.io/f/xdabgvyk", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: data,
+      });
+
+      if (res.ok) {
+        setSuccess(true);
+        setForm(initialState);
+      } else {
+        setSubmitError(true);
+      }
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -170,12 +188,12 @@ const ContactPage = () => {
               name="topic"
               value={form.topic}
               onChange={handleChange}
-              className="mt-1 w-full border border-white/10 px-3 py-2 text-base 2xl:text-lg 3xl:text-xl text-white focus:border-mind-violet focus:ring-2 focus:ring-mind-violet/30 outline-none rounded-xl bg-white/5 h-12 2xl:h-14 3xl:h-16"
+              className={`mt-1 w-full border border-white/10 px-3 py-2 text-base 2xl:text-lg 3xl:text-xl focus:border-mind-violet focus:ring-2 focus:ring-mind-violet/30 outline-none rounded-xl bg-white/5 h-12 2xl:h-14 3xl:h-16 ${form.topic ? 'text-white' : 'text-gray-400'}`}
               aria-invalid={!!errors.topic}
             >
-              <option value="" className="bg-mind-navy text-gray-400">Select one...</option>
+              <option value="">Select one...</option>
               {topics.map((t) => (
-                <option key={t} value={t} className="bg-mind-navy text-white">{t}</option>
+                <option key={t} value={t}>{t}</option>
               ))}
             </select>
             {errors.topic && <p className="text-xs 2xl:text-sm text-red-400 mt-1">{errors.topic}</p>}
@@ -231,10 +249,10 @@ const ContactPage = () => {
             <Label htmlFor="agree" className="text-xs 2xl:text-sm 3xl:text-base text-gray-400">I agree to the processing of my data for the purpose of this request.</Label>
           </div>
           {errors.agree && <p className="text-xs 2xl:text-sm text-red-400 mt-1 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">{errors.agree}</p>}
-          <div className="flex justify-center pt-2 2xl:pt-4 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
+          <div className="flex flex-col items-center gap-2 pt-2 2xl:pt-4 w-full max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
             <button
               type="submit"
-              className="text-white px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5 rounded-full font-semibold text-base 2xl:text-lg 3xl:text-xl transition-all duration-200 w-full sm:w-auto"
+              className="text-white px-8 py-3 2xl:px-10 2xl:py-4 3xl:px-12 3xl:py-5 rounded-full font-semibold text-base 2xl:text-lg 3xl:text-xl transition-all duration-200 w-full sm:w-auto disabled:opacity-60"
               style={{
                 background: 'transparent',
                 border: '1px solid rgba(109, 95, 247, 0.8)',
@@ -244,6 +262,7 @@ const ContactPage = () => {
             >
               {submitting ? "Sending..." : "Send Message"}
             </button>
+            {submitError && <p className="text-xs 2xl:text-sm text-red-400">Something went wrong. Please try again.</p>}
           </div>
         </form>
       </div>

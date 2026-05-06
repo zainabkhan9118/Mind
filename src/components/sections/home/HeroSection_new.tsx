@@ -2,20 +2,34 @@ import { useState } from "react";
 
 const HeroSection = () => {
   const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!email.trim()) return;
-    const subject = encodeURIComponent("Early Access Request");
-    const body = encodeURIComponent(`New early access signup:\n\nEmail: ${email}`);
-    window.location.href = `mailto:mindplayer.com@gmail.com?subject=${subject}&body=${body}`;
+    setStatus("sending");
+    try {
+      const res = await fetch("https://formspree.io/f/xzdorqkv", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
-    <div className="relative w-full h-72 sm:h-96 md:min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <img
-        src="/Hero1.jpeg"
+        src="/Hero1.PNG"
         alt="Hero background"
         className="absolute inset-0 w-full h-full object-cover object-center z-0"
       />
@@ -51,16 +65,19 @@ const HeroSection = () => {
             />
             <button
               type="submit"
-              className="w-full font-bold py-3 2xl:py-4 text-sm 2xl:text-base text-white rounded-xl transition-all duration-200"
+              disabled={status === "sending" || status === "success"}
+              className="w-full font-bold py-3 2xl:py-4 text-sm 2xl:text-base text-white rounded-xl transition-all duration-200 disabled:opacity-60"
               style={{
                 background: '#000000',
                 border: '1px solid rgba(109, 95, 247, 0.8)',
                 boxShadow: '0 0 16px rgba(109, 95, 247, 0.6), inset 0 0 12px rgba(109, 95, 247, 0.1)',
               }}
             >
-              Join Early Access
+              {status === "sending" ? "Sending..." : status === "success" ? "You're in!" : "Join Early Access"}
             </button>
-            <p className="text-xs 2xl:text-sm text-gray-400">No spam, just transformative tech.</p>
+            {status === "success" && <p className="text-xs 2xl:text-sm text-green-400">Thanks! We'll be in touch.</p>}
+            {status === "error" && <p className="text-xs 2xl:text-sm text-red-400">Something went wrong. Please try again.</p>}
+            {status === "idle" && <p className="text-xs 2xl:text-sm text-gray-400">No spam, just transformative tech.</p>}
           </form>
         </div>
       </div>
